@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "page": {
+    "heroSection": {
+      "title": "Hello, I'm!",
+      "description": "My name is Amirjani Faizmuhammad...",
+      "job1": "Web-developer",
+      "job2": "Bitrix24-developer",
+      "btn1": "Contact",
+      "btn2": "Dowload CV"
+    },
+    "achievementsSection": {
+      "title1": "Projects",
+      "title2": "Users",
+      "title3": "Awards",
+      "title4": "Years"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with HTML, CSS,JavaScript, TypeScript, React, Redux, PostgreSQL and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.",
+    "blockTab": {
+      "title1": "Skills",
+      "title2": "Education",
+      "title3": "Certifications",
+      "title2Desc": {
+        "text1": "Tajik National University"
+      },
+      "title3Desc": {
+        "text1": "IT Academy SoftClube",
+        "text2": "Online Alif Scills"
+      }
+    }
+  },
+  "project": {
+    "title": "My Projects",
+    "tab1": "All",
+    "tab2": "Web",
+    "tab3": "Bitrix",
+    "pj1": {
+      "title": "React Admin Page",
+      "desc": "The site is built on React and TypeScript. Has login and authorization"
+    },
+    "pj2": {
+      "title": "Nest Real Time Chat",
+      "desc": "The site is built only on Nest and TypeScript. Has Socket.io."
+    },
+    "pj3": {
+      "title": "Next My Portfolio",
+      "desc": "The site is built only on Next and TypeScript. Has Internationalization(i18n)."
+    }
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "desc": "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "contactForm": {
+      "name": "Your Name",
+      "namePlac": "Amirjon",
+      "subject": "Subject",
+      "subjectPlac": "Just saying hi",
+      "message": "Message",
+      "messagePlac": "Let's talk about",
+      "btn": "Send Message"
+    }
+  }
+}
