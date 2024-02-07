@@ -4,13 +4,14 @@ import ProjectTag from './ProjectTag'
 import { useInView, motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 import { IProjectsLang } from './IComponents';
+import { StaticImageData } from 'next/image';
 
 interface IProjectTab {
     data: {
         id: number;
         title: string,
         description: string,
-        image: string,
+        image: any,
         tag: string[],
         gitUrl: string,
         previewUrl: string,

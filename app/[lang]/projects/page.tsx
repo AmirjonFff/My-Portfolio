@@ -1,6 +1,9 @@
 import { Locale } from "@/i18n.config";
 import ProjectTab from "../components/projectTab";
 import { getDictionary } from "@/lib/dictionary";
+import admin_img from '../../../public/images/projects/admin_img.png';
+import chat_img from '../../../public/images/projects/chat_img.png';
+import portfolio_img from '../../../public/images/projects/portfolio_img.png';
 
 async function page({ params: { lang } }: {
     params: { lang: Locale }
@@ -13,7 +16,7 @@ async function page({ params: { lang } }: {
             id: 1,
             title: project.pj1.title,
             description: project.pj1.desc,
-            image: "https://fotohosting.su/images/2024/01/22/Screenshot-2024-01-22-163352.png",
+            image: admin_img,
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/AvestoJobsFrontAdmin",
             previewUrl: "https://avesto-jobs-front-admin.vercel.app/",
@@ -22,7 +25,7 @@ async function page({ params: { lang } }: {
             id: 2,
             title: project.pj2.title,
             description: project.pj2.desc,
-            image: "https://fotohosting.su/images/2024/01/22/Screenshot-2024-01-22-173859.png",
+            image: chat_img,
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/chat-socket.io/tree/main",
             previewUrl: "https://amir-chat.onrender.com/chat",
@@ -31,7 +34,7 @@ async function page({ params: { lang } }: {
             id: 2,
             title: project.pj3.title,
             description: project.pj3.desc,
-            image: "https://fotohosting.su/images/2024/01/23/Screenshot-2024-01-23-092639.png",
+            image: portfolio_img,
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/chat-socket.io/tree/main",
             previewUrl: "/",
