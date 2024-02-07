@@ -1,6 +1,8 @@
 import { getDictionary } from "@/lib/dictionary";
 import MyAbout from "../components/myAbout";
 import { Locale } from "@/i18n.config";
+import about_img from '../../../public/images/about-image.png'
+import Image from "next/image";
 
 const AboutSection = async ({ params: { lang } }: {
   params: { lang: Locale }
@@ -49,11 +51,11 @@ const AboutSection = async ({ params: { lang } }: {
       ),
     },
   ];
-
+https://fotohosting.su/images/2024/01/19/about-image.png
   return (
     <section className="text-white bg-[#121212] h-screen flex items-center" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center w-[1300px] mx-auto py-8 xl:gap-16 sm:py-16">
-        <img src="https://fotohosting.su/images/2024/01/19/about-image.png" width={500} height={500} />
+        <Image src={about_img} className="" width={500} height={500} alt="about_img" />
         <MyAbout TAB_DATA={TAB_DATA} lang = {about} />
       </div>
     </section>
