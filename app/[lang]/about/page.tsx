@@ -51,7 +51,7 @@ const AboutSection = async ({ params: { lang } }: {
       ),
     },
   ];
-https://fotohosting.su/images/2024/01/19/about-image.png
+//https://fotohosting.su/images/2024/01/19/about-image.png
   return (
     <section className="text-white bg-[#121212] h-screen flex items-center" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center w-[1300px] mx-auto py-8 xl:gap-16 sm:py-16">
