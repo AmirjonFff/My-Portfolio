@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from './locale-switcher'
+import Nav from './nav'
 
 
 export default async function Header({ lang }: { lang: Locale }) {
@@ -16,17 +17,7 @@ export default async function Header({ lang }: { lang: Locale }) {
         >
           <img className="w-[50px] scale-125" src="https://fotohosting.su/images/2024/01/15/logo.png" alt="logo" />
         </Link>
-        <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-          <li>
-            <Link className='text-[#ADB7BE] !text-[18px] hover:text-white' href={`/${lang}/about`}>{navigation.about}</Link>
-          </li>
-          <li>
-            <Link className='text-[#ADB7BE] !text-[18px] hover:text-white' href={`/${lang}/projects`}>{navigation.projects}</Link>
-          </li>
-          <li>
-            <Link className='text-[#ADB7BE] !text-[18px] hover:text-white' href={`/${lang}/contact`}>{navigation.contact}</Link>
-          </li>         
-        </ul>
+       <Nav lang={navigation} params={lang} />
         <LocaleSwitcher />
       </div>
     </header>

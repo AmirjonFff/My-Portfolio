@@ -15,21 +15,21 @@ const AchievementsSection = ({ page: { achievementsSection } }: IAchievementsSec
     const achievementsList = [
         {
             metric: `${achievementsSection.title1}`,
-            value: "100",
+            value: "10",
             postfix: "+",
         },
         {
             prefix: "~",
             metric: `${achievementsSection.title2}`,
-            value: "100,000",
+            value: "10,000",
         },
         {
             metric: `${achievementsSection.title3}`,
-            value: "7",
+            value: "3",
         },
         {
             metric: `${achievementsSection.title4}`,
-            value: "5",
+            value: "1",
         },
     ];
 

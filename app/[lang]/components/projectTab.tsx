@@ -4,8 +4,6 @@ import ProjectTag from './ProjectTag'
 import { useInView, motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 import { IProjectsLang } from './IComponents';
-import { StaticImageData } from 'next/image';
-
 interface IProjectTab {
     data: {
         id: number;
@@ -36,21 +34,22 @@ function ProjectTab({ data, lang }: IProjectTab) {
         initial: { y: 50, opacity: 0 },
         animate: { y: 0, opacity: 1 },
     };
+
     return (
         <div className=''>
             <div className="text-white flex flex-row justify-center items-center gap-2">
                 <ProjectTag
-                    onClick={handleTagChange}
+                    onClick={() => handleTagChange("All")}
                     name={`${lang.tab1}`}
                     isSelected={tag === "All"}
                 />
                 <ProjectTag
-                    onClick={handleTagChange}
+                    onClick={() => handleTagChange("Web")}
                     name={`${lang.tab2}`}
                     isSelected={tag === "Web"}
                 />
                 <ProjectTag
-                    onClick={handleTagChange}
+                    onClick={() => handleTagChange("Mobile")}
                     name={`${lang.tab3}`}
                     isSelected={tag === "Mobile"}
                 />
