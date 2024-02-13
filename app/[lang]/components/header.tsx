@@ -20,7 +20,7 @@ export default async function Header({ lang }: { lang: Locale }) {
         </Link>
         <Nav lang={navigation} params={lang} />
         <div className='hidden md:block'><LocaleSwitcher /></div>
-        <NavTel />
+        <NavTel lang={navigation} params={lang} />
       </div>
     </header>
   )
