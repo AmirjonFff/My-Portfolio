@@ -34,7 +34,7 @@ const AchievementsSection = ({ page: { achievementsSection } }: IAchievementsSec
     ];
 
     return (
-        <div className="w-[1300px] mx-auto mt-20">
+        <div className="max-w-[500px] mx-auto">
             <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
                 {achievementsList.map((achievement, index) => {
                     return (

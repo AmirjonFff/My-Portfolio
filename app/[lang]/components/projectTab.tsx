@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 import { IProjectsLang } from './IComponents';
 interface IProjectTab {
     data: {
-        id: number;
+        id: number,
         title: string,
         description: string,
         image: any,

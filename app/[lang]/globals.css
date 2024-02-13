@@ -7,3 +7,8 @@ body {
     min-height: 100vh;
     background-color: #121212;
 }
+
+.navTel {
+    background-color: rgba(0, 0, 0, 0.583);
+    backdrop-filter: blur(10px);
+}
