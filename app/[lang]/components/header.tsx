@@ -4,6 +4,8 @@ import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from './locale-switcher'
 import Nav from './nav'
 import { NavTel } from './navTel'
+import Image from 'next/image'
+import logo from '../../../public/logo.png'
 
 
 export default async function Header({ lang }: { lang: Locale }) {
@@ -16,7 +18,7 @@ export default async function Header({ lang }: { lang: Locale }) {
           href={`/${lang}`}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          <img className="w-[50px] scale-125" src="https://fotohosting.su/images/2024/01/15/logo.png" alt="logo" />
+          <Image className="w-[50px] scale-125" src={logo} alt="logo" />
         </Link>
         <Nav lang={navigation} params={lang} />
         <div className='hidden md:block'><LocaleSwitcher /></div>
