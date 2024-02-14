@@ -54,8 +54,8 @@ const AboutSection = async ({ params: { lang } }: {
 //https://fotohosting.su/images/2024/01/19/about-image.png
   return (
     <section className="text-white bg-[#121212] h-screen flex items-center" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center w-[1300px] mx-auto py-8 xl:gap-16 sm:py-16">
-        <Image src={about_img} className="" width={500} height={500} alt="about_img" />
+      <div className="md:grid md:grid-cols-2 gap-8 items-center px-5 w-[1300px] mx-auto py-8 xl:gap-16 sm:py-16">
+        <Image src={about_img} className="mt-[100px] md:mt-0" width={500} height={500} alt="about_img" />
         <MyAbout TAB_DATA={TAB_DATA} lang = {about} />
       </div>
     </section>

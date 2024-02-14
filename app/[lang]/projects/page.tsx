@@ -42,8 +42,8 @@ async function page({ params: { lang } }: {
     ];
     return (
         <div className='bg-[#121212] min-h-screen'>
-            <section className="projects w-[1300px] mx-auto pb-8 pt-24">
-                <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+            <section className="projects max-w-[1300px] px-5 mx-auto pb-8 pt-24">
+                <h2 className="text-center text-4xl font-bold text-white mt-1 md:mt-4 mb-8 md:mb-12">
                     {project.title}
                 </h2>
                 <ProjectTab lang={project} data={projectsData} />
