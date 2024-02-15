@@ -92,7 +92,7 @@ export function NavTel({ lang, params }: INav) {
               {lang.projects}
               <ListItemSuffix>
                 <Chip
-                  value="(5)"
+                  value="(3)"
                   size="sm"
                   color="green"
                   className="rounded-full"

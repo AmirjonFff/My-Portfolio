@@ -6,6 +6,7 @@ import Nav from './nav'
 import { NavTel } from './navTel'
 import Image from 'next/image'
 import logo from '../../../public/logo.png'
+import logo2 from '../../../public/logo2.png'
 
 
 export default async function Header({ lang }: { lang: Locale }) {
@@ -16,9 +17,9 @@ export default async function Header({ lang }: { lang: Locale }) {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={`/${lang}`}
-          className="text-2xl md:text-5xl text-white font-semibold"
+          className="text-2xl md:text-5xl text-white font-semibold flex "
         >
-          <Image className="w-[50px] scale-125" src={logo} alt="logo" />
+          <Image className="w-[70px] scale-125" src={logo2} alt="logo" /> <span>mir</span>
         </Link>
         <Nav lang={navigation} params={lang} />
         <div className='hidden md:block'><LocaleSwitcher /></div>
