@@ -8,7 +8,7 @@ import { IAchievementsSection } from "./IComponents";
 const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
 
     return (
-        <section className="container mt-10 mx-auto px-12 py-10 sm:py-14 md:py-16 lg:py-36">
+        <section className="container mt-10 mx-auto px-12 py-5 sm:py-14 md:py-16 lg:py-36">
             <div className="grid grid-cols-1 sm:grid-cols-12">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}

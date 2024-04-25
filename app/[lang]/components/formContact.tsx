@@ -1,4 +1,6 @@
 "use client";
+import toast from 'react-hot-toast';
+
 
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
@@ -17,6 +19,7 @@ function FormContact({ lang }: IFormContact) {
         if (form.current) {
             emailjs.sendForm('service_e3gtz8d', 'template_nic07af', form.current, 'io7MteAYkaUykjhIB')
                 .then((result) => {
+                    toast.success("Сообшения успешно отправлено")
                     console.log(result.text);
                 }, (error) => {
                     console.log(error.text);
@@ -24,6 +27,7 @@ function FormContact({ lang }: IFormContact) {
 
             form.current.reset();
         }
+        
     };
 
     return (

@@ -17,9 +17,9 @@ export default async function Header({ lang }: { lang: Locale }) {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={`/${lang}`}
-          className="text-2xl md:text-5xl text-white font-semibold flex "
+          className="text-2xl text-white font-semibold flex items-end lg:scale-[1.3]"
         >
-          <Image className="w-[70px] scale-125" src={logo2} alt="logo" /> <span>mir</span>
+          <Image className="w-[60px]" src={logo2} alt="logo" /> <span className='text-transparent translate-y-1 -ml-3 bg-clip-text bg-gradient-to-r from-yellow-500 to-slate-300 font-bold'>mir</span>
         </Link>
         <Nav lang={navigation} params={lang} />
         <div className='hidden md:block'><LocaleSwitcher /></div>

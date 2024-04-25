@@ -31,7 +31,16 @@ async function page({ params: { lang } }: {
             previewUrl: "https://amir-chat.onrender.com/chat",
         },
         {
-            id: 2,
+            id: 3,
+            title: project.pj3.title,
+            description: project.pj3.desc,
+            image: portfolio_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff/chat-socket.io/tree/main",
+            previewUrl: "/",
+        },
+        {
+            id: 3,
             title: project.pj3.title,
             description: project.pj3.desc,
             image: portfolio_img,
