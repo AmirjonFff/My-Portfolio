@@ -47,7 +47,7 @@ async function page({ params: { lang } }: {
             image: store_img,
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/Online-Store",
-            previewUrl: "/",
+            previewUrl: "https://af-online-store.vercel.app/",
         }
     ];
     return (
