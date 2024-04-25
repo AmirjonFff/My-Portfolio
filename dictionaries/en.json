@@ -52,6 +52,10 @@
     "pj3": {
       "title": "Next My Portfolio",
       "desc": "The site is built only on Next and TypeScript. Has Internationalization(i18n)."
+    },
+    "pj4": {
+      "title": "React Online Store",
+      "desc": "The site is built only on Next and TypeScript. Has Internationalization(i18n)."
     }
   },
   "contact": {

@@ -3,6 +3,7 @@ import ProjectTab from "../components/projectTab";
 import { getDictionary } from "@/lib/dictionary";
 import admin_img from '../../../public/images/projects/admin_img.png';
 import chat_img from '../../../public/images/projects/chat_img.png';
+import store_img from '../../../public/images/projects/store.png';
 import portfolio_img from '../../../public/images/projects/portfolio_img.png';
 
 async function page({ params: { lang } }: {
@@ -40,10 +41,10 @@ async function page({ params: { lang } }: {
             previewUrl: "/",
         },
         {
-            id: 3,
-            title: project.pj3.title,
-            description: project.pj3.desc,
-            image: portfolio_img,
+            id: 4,
+            title: project.pj4.title,
+            description: project.pj4.desc,
+            image: store_img,
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/chat-socket.io/tree/main",
             previewUrl: "/",
