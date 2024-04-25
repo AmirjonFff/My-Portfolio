@@ -46,7 +46,7 @@ async function page({ params: { lang } }: {
             description: project.pj4.desc,
             image: store_img,
             tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/chat-socket.io/tree/main",
+            gitUrl: "https://github.com/AmirjonFff/Online-Store",
             previewUrl: "/",
         }
     ];
