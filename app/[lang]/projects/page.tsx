@@ -52,8 +52,8 @@ async function page({ params: { lang } }: {
         },
         {
             id: 5,
-            title: project.pj4.title,
-            description: project.pj4.desc,
+            title: project.pj5.title,
+            description: project.pj5.desc,
             image: vesto_img,
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
