@@ -56,6 +56,10 @@
       "pj4": {
         "title": "Фуруши Онлайн дар React",
         "desc": "Сайти сазоварӣ шудааст вафоқӣ ба React ва TypeScript."
+      },
+      "pj5": {
+        "title": "Омузиш дар React",
+        "desc": "Сайти сазоварӣ шудааст вафоқӣ ба React ва TypeScript."
       }
     },
     "contact": {

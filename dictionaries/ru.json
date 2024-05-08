@@ -56,6 +56,10 @@
     "pj4": {
       "title": "React Интернет магазин",
       "desc": "Сайт построен исключительно на React и TypeScript."
+    },
+    "pj5": {
+      "title": "React LMS-система",
+      "desc": "Сайт построен исключительно на React и TypeScript."
     }
   },
   "contact": {

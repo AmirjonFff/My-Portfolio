@@ -5,6 +5,7 @@ import admin_img from '../../../public/images/projects/admin_img.png';
 import chat_img from '../../../public/images/projects/chat_img.png';
 import store_img from '../../../public/images/projects/store.png';
 import portfolio_img from '../../../public/images/projects/portfolio_img.png';
+import vesto_img from '../../../public/images/projects/vesto_img.png';
 
 async function page({ params: { lang } }: {
     params: { lang: Locale }
@@ -48,6 +49,15 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/Online-Store",
             previewUrl: "https://af-online-store.vercel.app/",
+        },
+        {
+            id: 5,
+            title: project.pj4.title,
+            description: project.pj4.desc,
+            image: vesto_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff",
+            previewUrl: "https://af-vesto.vercel.app/",
         }
     ];
     return (
