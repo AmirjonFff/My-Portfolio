@@ -60,6 +60,10 @@
     "pj5": {
       "title": "React LMS-system",
       "desc": "The site is built only on Next and TypeScript."
+    },
+    "pj6": {
+      "title": "Fullstack TO DO LIST on Express.js React and TypeScript",
+      "desc": "The site is built exclusively on Express.js React and TypeScript. This is my first full stack offer. Has authorization."
     }
   },
   "contact": {

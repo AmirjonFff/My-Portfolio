@@ -60,6 +60,10 @@
     "pj5": {
       "title": "React LMS-система",
       "desc": "Сайт построен исключительно на React и TypeScript."
+    },
+    "pj6": {
+      "title": "Fullstack TO DO LIST на Express.js React и  TypeScript",
+      "desc": "Сайт построен исключительно на Express.js React и  TypeScript. Это мой первый фулстак предложения. Имеет авторизация"
     }
   },
   "contact": {

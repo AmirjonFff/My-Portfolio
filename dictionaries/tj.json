@@ -60,6 +60,10 @@
       "pj5": {
         "title": "Омузиш дар React",
         "desc": "Сайти сазоварӣ шудааст вафоқӣ ба React ва TypeScript."
+      },
+      "pj6": {
+        "title": "Рӯйхати корхо, Fullstack дар Express.js React ва TypeScript",
+        "desc": "Сайт дар Express.js React ва TypeScript сохта шудааст. Ин аввалин фулстак барномаи ман аст. Воридшави дорад."
       }
     },
     "contact": {

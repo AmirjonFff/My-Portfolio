@@ -6,6 +6,7 @@ import chat_img from '../../../public/images/projects/chat_img.png';
 import store_img from '../../../public/images/projects/store.png';
 import portfolio_img from '../../../public/images/projects/portfolio_img.png';
 import vesto_img from '../../../public/images/projects/vesto_img.png';
+import todo_img from '../../../public/images/projects/todo_img.png';
 
 async function page({ params: { lang } }: {
     params: { lang: Locale }
@@ -58,6 +59,15 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://af-vesto.vercel.app/",
+        },
+        {
+            id: 5,
+            title: project.pj6.title,
+            description: project.pj6.desc,
+            image: todo_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff",
+            previewUrl: "https://af-height-todos.vercel.app/",
         }
     ];
     return (
