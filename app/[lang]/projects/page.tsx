@@ -61,7 +61,7 @@ async function page({ params: { lang } }: {
             previewUrl: "https://af-vesto.vercel.app/",
         },
         {
-            id: 5,
+            id: 6,
             title: project.pj6.title,
             description: project.pj6.desc,
             image: todo_img,
