@@ -68,6 +68,10 @@
     "pj7": {
       "title": "React Калькулятор",
       "desc": "Приложение построено на React и JavaScript."
+    },
+    "pj8": {
+      "title": "Next 82-Towers",
+      "desc": "Приложение построено на Next и TypeScript."
     }
   },
   "contact": {

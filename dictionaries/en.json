@@ -68,6 +68,10 @@
     "pj7": {
       "title": "React Calculator",
       "desc": "The application is built on React and JavaScript."
+    },
+    "pj8": {
+      "title": "Next 82-Towers",
+      "desc": "Lending site 82-Towers is built on Next and TypeScript."
     }
   },
   "contact": {

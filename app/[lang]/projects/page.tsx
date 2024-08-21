@@ -8,6 +8,7 @@ import portfolio_img from '../../../public/images/projects/portfolio_img.png';
 import vesto_img from '../../../public/images/projects/vesto_img.png';
 import todo_img from '../../../public/images/projects/todo_img.png';
 import calculator_Img from '../../../public/images/projects/calculator_Img.png';
+import towers_img from '../../../public/images/projects/82towers_img.png';
 
 async function page({ params: { lang } }: {
     params: { lang: Locale }
@@ -24,6 +25,15 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/calculator",
             previewUrl: "https://af-calculator.vercel.app/",
+        },
+        {
+            id: 8,
+            title: project.pj8.title,
+            description: project.pj8.desc,
+            image: towers_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff/82-TOWERS_mySecondTsProject",
+            previewUrl: "https://82towers.tj/",
         },
         {
             id: 1,
