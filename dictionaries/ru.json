@@ -64,6 +64,10 @@
     "pj6": {
       "title": "Fullstack TO DO LIST на Express.js React и  TypeScript",
       "desc": "Сайт построен исключительно на Express.js React и  TypeScript. Это мой первый фулстак предложения. Имеет авторизация"
+    },
+    "pj7": {
+      "title": "React Калькулятор",
+      "desc": "Приложение построено на React и JavaScript."
     }
   },
   "contact": {

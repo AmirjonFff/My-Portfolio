@@ -7,6 +7,7 @@ import store_img from '../../../public/images/projects/store.png';
 import portfolio_img from '../../../public/images/projects/portfolio_img.png';
 import vesto_img from '../../../public/images/projects/vesto_img.png';
 import todo_img from '../../../public/images/projects/todo_img.png';
+import calculator_Img from '../../../public/images/projects/calculator_Img.png';
 
 async function page({ params: { lang } }: {
     params: { lang: Locale }
@@ -15,6 +16,15 @@ async function page({ params: { lang } }: {
     const { project } = await getDictionary(lang);
 
     const projectsData = [
+        {
+            id: 7,
+            title: project.pj7.title,
+            description: project.pj7.desc,
+            image: calculator_Img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff/calculator",
+            previewUrl: "https://af-calculator.vercel.app/",
+        },
         {
             id: 1,
             title: project.pj1.title,

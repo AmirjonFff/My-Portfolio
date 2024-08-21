@@ -47,23 +47,27 @@
     },
     "pj2": {
       "title": "Nest Real Time Chat",
-      "desc": "The site is built only on Nest and TypeScript. Has Socket.io."
+      "desc": "The site is built on Nest and TypeScript. Has Socket.io."
     },
     "pj3": {
       "title": "Next My Portfolio",
-      "desc": "The site is built only on Next and TypeScript. Has Internationalization(i18n)."
+      "desc": "The site is built on Next and TypeScript. Has Internationalization(i18n)."
     },
     "pj4": {
       "title": "React Online Store",
-      "desc": "The site is built only on Next and TypeScript."
+      "desc": "The site is built on Next and TypeScript."
     },
     "pj5": {
       "title": "React LMS-system",
-      "desc": "The site is built only on Next and TypeScript."
+      "desc": "The site is built on Next and TypeScript."
     },
     "pj6": {
       "title": "Fullstack TO DO LIST on Express.js React and TypeScript",
       "desc": "The site is built exclusively on Express.js React and TypeScript. This is my first full stack offer. Has authorization."
+    },
+    "pj7": {
+      "title": "React Calculator",
+      "desc": "The application is built on React and JavaScript."
     }
   },
   "contact": {
