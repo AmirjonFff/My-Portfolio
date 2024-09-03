@@ -34,7 +34,8 @@ const AchievementsSection = ({ page: { achievementsSection } }: IAchievementsSec
     ];
 
     return (
-        <div className="md:w-[700px] md:max-w-full lg:w-[900px] xl:w-[1300px] max-w-[500px] mx-auto">
+        <div className="md:w-[700px] bg-[#131131] md:max-w-full lg:w-[900px] xl:w-[1300px] max-w-[500px] mx-auto">
+            
             <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
                 {achievementsList.map((achievement, index) => {
                     return (

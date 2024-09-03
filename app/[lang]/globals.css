@@ -12,3 +12,9 @@ body {
     background-color: rgba(0, 0, 0, 0.583);
     backdrop-filter: blur(10px);
 }
+
+.bg_gradient {
+    
+    background: rgb(19, 17, 51);
+    background: radial-gradient(circle, #131133 30%, #17153B 100%);
+}
