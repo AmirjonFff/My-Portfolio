@@ -6,7 +6,6 @@ import Nav from './nav'
 import { NavTel } from './navTel'
 import Image from 'next/image'
 import logo from '../../../public/logo.png'
-import logo2 from '../../../public/logo2.png'
 
 
 export default async function Header({ lang }: { lang: Locale }) {
@@ -19,7 +18,7 @@ export default async function Header({ lang }: { lang: Locale }) {
           href={`/${lang}`}
           className="text-2xl text-white font-semibold flex items-end lg:scale-[1.3]"
         >
-          <Image className="w-[60px]" src={logo2} alt="logo" /> <span className='text-transparent translate-y-1 -ml-3 bg-clip-text bg-gradient-to-r from-yellow-500 to-slate-300 font-bold'>mir</span>
+          <Image className="w-[60px]" src={logo} alt="logo" /> <span className='text-transparent translate-y-1 -ml-3 bg-clip-text bg-gradient-to-r from-yellow-500 to-slate-300 font-bold'>mir</span>
         </Link>
         <Nav lang={navigation} params={lang} />
         <div className='hidden md:block'><LocaleSwitcher /></div>

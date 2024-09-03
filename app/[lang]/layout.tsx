@@ -5,7 +5,6 @@ import { Locale, i18n } from '@/i18n.config'
 import Header from './components/header'
 
 import { Inter } from 'next/font/google'
-import { NavTel } from './components/navTel'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
