@@ -14,7 +14,7 @@ body {
 }
 
 .bg_gradient {
-    
-    background: rgb(19, 17, 51);
-    background: radial-gradient(circle, #131133 30%, #17153B 100%);
+
+    background: rgb(26, 102, 124);
+    background: radial-gradient(circle, #2a285c 0%, rgba(23, 21, 59, 1) 50%);
 }

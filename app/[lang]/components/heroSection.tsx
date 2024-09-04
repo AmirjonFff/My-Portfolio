@@ -9,7 +9,7 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
 
     return (
         <section className="container relative mt-10 mx-auto px-12 py-5 sm:py-14 md:py-16 lg:py-36">
-            <div className="absolute z-0 rotate-[30deg] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#131131] to-transparent -left-56 -top-10 w-[500px] h-[500px] rounded-full">
+            <div className="absolute z-0 rotate-[30deg] bg_gradient -left-72 -top-32 w-[800px] h-[800px] rounded-full">
 
             </div>
             <div className="grid relative z-10 grid-cols-1 sm:grid-cols-12">
