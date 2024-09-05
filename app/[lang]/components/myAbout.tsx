@@ -24,13 +24,15 @@ function MyAbout({ TAB_DATA, lang }: IMyAbout) {
     };
 
     return (
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-            <h2 className="text-4xl font-bold text-white mb-4">{lang.title}</h2>
-            <p className="text-base lg:text-lg">
+        <div className="mt-4 relative z-10 md:mt-0 text-left flex flex-col h-full">
+            <div className="absolute -z-10 bg_gradient2 -right-52 -bottom-20 w-[600px] h-[600px] rounded-full">
+            </div>
+            <h2 className="text-2xl font-bold text-white mb-4 text-center">{lang.title}</h2>
+            <p className="text-base lg:text-lg text-justify">
                 {lang.description}
             </p>
             <BlockTab lang={lang.blockTab} tab={tab} handleTabChange={handleTabChange} />
-            <div className="mt-8">
+            <div className="mt-8 w-[470px] h-[70px] mx-auto">
                 {TAB_DATA.find((t) => t.id === tab)?.content}
             </div>
         </div>

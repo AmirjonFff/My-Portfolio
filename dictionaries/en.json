@@ -21,8 +21,8 @@
     }
   },
   "about": {
-    "title": "About Me",
-    "description": "I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with HTML, CSS,JavaScript, TypeScript, React, Redux, PostgreSQL and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.",
+    "title": "Frontend developer with experience creating modern web applications",
+    "description": "My name is Amirjani Faizmukhamad. I have over a year of experience in development. I possess deep knowledge and skills in creating modern, responsive, and high-performance web applications. I specialize in HTML, CSS, JavaScript, TypeScript, and React. I actively use Redux for state management and Next.js for server-side rendering and creating dynamic web pages. I have implemented many projects using these technologies. I am proficient in working with PostgreSQL for creating and managing databases in web applications. Throughout my career, I have developed numerous websites, focusing on their performance, responsiveness, and usability.",
     "blockTab": {
       "title1": "Skills",
       "title2": "Education",
@@ -31,8 +31,8 @@
         "text1": "Tajik National University"
       },
       "title3Desc": {
-        "text1": "IT Academy SoftClube",
-        "text2": "Online Alif Scills"
+        "text1": "Alif Academy",
+        "text2": "SoftClub (IT-academy)"
       }
     }
   },
