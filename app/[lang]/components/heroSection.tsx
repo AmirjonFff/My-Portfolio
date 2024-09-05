@@ -8,7 +8,7 @@ import { IAchievementsSection } from "./IComponents";
 const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
 
     return (
-        <section className="container relative mt-10 mx-auto px-12 py-5 sm:py-14 md:py-16 lg:py-36">
+        <section className="container relative mt-10 mx-auto px-20 py-5 sm:py-14 md:py-16 lg:py-36">
             <div className="absolute z-0 rotate-[30deg] bg_gradient -left-72 -top-32 w-[800px] h-[800px] rounded-full">
 
             </div>
@@ -37,13 +37,13 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                             className="text-[25px] md:text-[35px] lg:text-6xl xl:text-7xl"
                         />
                     </h1>
-                    <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl pr-20">
+                    <p className="text-[#ADB7BE] w-[80%] text-base sm:text-lg mb-6 lg:text-xl">
                         {heroSection.description}
                     </p>
                     <div>
                         <Link
                             href="/contact"
-                            className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#00FFFF] to-[#87CEEB] hover:bg-slate-200 text-white"
+                            className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#00FFFF] to-[#87CEEB] hover:bg-slate-200 text-[#ffffff]"
                         >
                             {heroSection.btn1}
                         </Link>
@@ -64,7 +64,7 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                     transition={{ duration: 0.5 }}
                     className="col-span-4 row-start-1 col-start-1 sm:row-start-auto sm:col-start-auto place-self-center mt-4 lg:mt-0"
                 >
-                    <div className="rounded-full bg-[#131131]  w-[250px] h-[250px] lg:w-[450px] lg:h-[450px] relative">
+                    <div className="rounded-full bg-[#131131]  w-[250px] h-[250px] lg:w-[430px] lg:h-[430px] relative">
                         <img
                             src="https://png.pngtree.com/png-vector/20231108/ourmid/pngtree-programmer-it-developer-png-image_10439723.png"
                             alt="hero image"

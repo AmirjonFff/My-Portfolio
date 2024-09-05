@@ -13,10 +13,10 @@ export default async function Header({ lang }: { lang: Locale }) {
 
   return (
     <header className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#131131] bg-opacity-100">
-      <div className="flex container lg:py-[14px] flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <div className="flex container lg:py-[14px] flex-wrap items-center justify-between mx-auto px-10 py-2">
         <Link
           href={`/${lang}`}
-          className="text-2xl text-white font-semibold flex items-end lg:scale-[1.3]"
+          className="text-2xl font-semibold flex items-end lg:scale-[1.3]"
         >
           <Image className="w-[45px] translate-y-[3px]" src={logo} alt="logo" />
         </Link>
