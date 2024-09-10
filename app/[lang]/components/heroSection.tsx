@@ -64,7 +64,7 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                     transition={{ duration: 0.5 }}
                     className="col-span-4 row-start-1 col-start-1 sm:row-start-auto sm:col-start-auto place-self-center mt-4 lg:mt-0"
                 >
-                    <div className="rounded-full bg-[#131131]  w-[250px] h-[250px] lg:w-[430px] lg:h-[430px] relative">
+                    <div className="rounded-full bg-[#100e2b]  w-[250px] h-[250px] lg:w-[430px] lg:h-[430px] relative">
                         <img
                             src="https://png.pngtree.com/png-vector/20231108/ourmid/pngtree-programmer-it-developer-png-image_10439723.png"
                             alt="hero image"

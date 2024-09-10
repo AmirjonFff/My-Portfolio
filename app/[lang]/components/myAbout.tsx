@@ -27,10 +27,14 @@ function MyAbout({ TAB_DATA, lang }: IMyAbout) {
         <div className="mt-4 relative z-10 md:mt-0 text-left flex flex-col h-full">
             <div className="absolute -z-10 bg_gradient2 -right-52 -bottom-20 w-[600px] h-[600px] rounded-full">
             </div>
-            <h2 className="text-2xl font-bold text-white mb-4 text-center">{lang.title}</h2>
-            <p className="text-base lg:text-lg text-justify">
-                {lang.description}
-            </p>
+            <h2 className="text-2xl font-bold text-white mb-2 text-center">{lang.title}</h2>
+            {
+                lang.description.split('*').map((el, i) =>
+                    <p key={i} className="text-base lg:text-lg mt-2 text-justify">
+                        <span className="inline-block w-10"></span>{el}
+                    </p>
+                )
+            }
             <BlockTab lang={lang.blockTab} tab={tab} handleTabChange={handleTabChange} />
             <div className="mt-8 w-[470px] h-[70px] mx-auto">
                 {TAB_DATA.find((t) => t.id === tab)?.content}

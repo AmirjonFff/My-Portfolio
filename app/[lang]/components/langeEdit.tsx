@@ -65,16 +65,16 @@ export function MenuCustomList() {
           <ul className='flex flex-col gap-1'>
             {i18n.locales.map(locale => {
               return (
-                <li key={locale} className='flex items-center justify-between px-2 gap-2'>
+                <li key={locale} className=''>
                   <Link
                     href={redirectedPathName(locale)}
-                    className={`rounded-md ${locale === lang ? "" : ""} text-lg text-white`}
+                    className={`rounded-md flex items-center justify-between px-2 gap-2 ${locale === lang ? "" : ""} text-lg text-white`}
                   >
                     {locale}
+                    <div className='w-[25px]'>
+                      <Image src={imgs.find(el => el.id === locale)?.img ?? ''} alt="img" />
+                    </div>
                   </Link>
-                  <div className='w-[25px]'>
-                    <Image src={imgs.find(el => el.id === locale)?.img ?? ''} alt="img" />
-                  </div>
                 </li>
               )
             })}

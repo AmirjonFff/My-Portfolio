@@ -54,15 +54,6 @@ async function page({ params: { lang } }: {
             previewUrl: "https://amir-chat.onrender.com/chat",
         },
         {
-            id: 3,
-            title: project.pj3.title,
-            description: project.pj3.desc,
-            image: portfolio_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/chat-socket.io/tree/main",
-            previewUrl: "/",
-        },
-        {
             id: 4,
             title: project.pj4.title,
             description: project.pj4.desc,
@@ -91,9 +82,9 @@ async function page({ params: { lang } }: {
         }
     ];
     return (
-        <div className='bg-[#121212] min-h-screen'>
+        <div className='bg-[#17153B] min-h-screen'>
             <section className="projects max-w-[1300px] px-5 mx-auto pb-8 pt-24">
-                <h2 className="text-center text-4xl font-bold text-white mt-1 md:mt-4 mb-8 md:mb-12">
+                <h2 className="text-center text-4xl font-bold text-white mt-1 md:mt-4 mb-6 md:mb-8">
                     {project.title}
                 </h2>
                 <ProjectTab lang={project} data={projectsData} />

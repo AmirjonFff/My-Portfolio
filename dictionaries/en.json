@@ -22,7 +22,7 @@
   },
   "about": {
     "title": "Frontend developer with experience creating modern web applications",
-    "description": "My name is Amirjan Faiz Muhammad. I have more than one year of experience in development. I have deep knowledge and skills in creating modern, adaptive and productive web applications. I specialize in HTML, CSS, JavaScript, TypeScript and React. I actively use Redux for state management and Next.js for server rendering and creating dynamic web pages. I have implemented many projects using these technologies. I can work with PostgreSQL to create and manage databases in web applications. Over the course of my career, I have developed many websites, paying special attention to their performance, adaptability and usability.",
+    "description": "My name is Amirjan Faizmuhammad. I have more than one year of experience in development. I have deep knowledge and skills in creating modern, adaptive and productive web applications. I specialize in HTML, CSS, JavaScript, TypeScript and React. I actively use Redux for state management and Next.js for server rendering and creating dynamic web pages. I have implemented many projects using these technologies. * I can work with PostgreSQL and MongoDb to create and manage databases in web applications. Over the course of my career, I have developed many websites, paying special attention to their performance, adaptability and usability.",
     "blockTab": {
       "title1": "Skills",
       "title2": "Education",
@@ -38,28 +38,22 @@
   },
   "project": {
     "title": "My Projects",
-    "tab1": "All",
-    "tab2": "Web",
-    "tab3": "Bitrix",
+    "more": "Read more",
     "pj1": {
-      "title": "React Admin Page",
-      "desc": "The site is built on React and TypeScript. Has login and authorization"
+      "title": "Admin panel",
+      "desc": "A web application for managing a job vacancy website, built with React and TypeScript, includes login and authorization features. This ensures secure and convenient management of vacancies and users through an administrative panel."
     },
     "pj2": {
       "title": "Nest Real Time Chat",
       "desc": "The site is built on Nest and TypeScript. Has Socket.io."
     },
-    "pj3": {
-      "title": "Next My Portfolio",
-      "desc": "The site is built on Next and TypeScript. Has Internationalization(i18n)."
-    },
     "pj4": {
-      "title": "React Online Store",
-      "desc": "The site is built on Next and TypeScript."
+      "title": "Online Store",
+      "desc": "The project is an online store built with React and TypeScript. It features a shopping cart connected to local storage, allowing users to retain items even after refreshing the page. Additionally, it includes various filters for convenient product search and sorting."
     },
     "pj5": {
-      "title": "React LMS-system",
-      "desc": "The site is built on Next and TypeScript."
+      "title": "MINDS",
+      "desc": "This is the official website of the Vesto-Education educational center, built using React and TypeScript. It is integrated with a Learning Management System (LMS), providing a seamless experience for managing courses and educational content."
     },
     "pj6": {
       "title": "Fullstack TO DO LIST on Express.js React and TypeScript",

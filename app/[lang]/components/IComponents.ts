@@ -12,9 +12,7 @@ interface Pj {
 
 export interface IProjectsLang {
     title: string;
-    tab1: string;
-    tab2: string;
-    tab3: string;
+    more: string;
     pj1: Pj;
     pj2: Pj;
     pj3: Pj;

@@ -1,6 +1,5 @@
 "use client"
-import React, { useRef, useState } from 'react'
-import ProjectTag from './ProjectTag'
+import React, { useRef } from 'react'
 import { useInView, motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 import { IProjectsLang } from './IComponents';
@@ -18,17 +17,8 @@ interface IProjectTab {
 }
 
 function ProjectTab({ data, lang }: IProjectTab) {
-    const [tag, setTag] = useState("All");
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
-
-    const handleTagChange = (newTag: string) => {
-        setTag(newTag);
-    };
-
-    const filteredProjects = data.filter((project) =>
-        project.tag.includes(tag)
-    );
 
     const cardVariants = {
         initial: { y: 50, opacity: 0 },
@@ -36,26 +26,9 @@ function ProjectTab({ data, lang }: IProjectTab) {
     };
 
     return (
-        <div className=''>
-            <div className="text-white flex flex-row justify-center items-center gap-2">
-                <ProjectTag
-                    onClick={() => handleTagChange("All")}
-                    name={`${lang.tab1}`}
-                    isSelected={tag === "All"}
-                />
-                <ProjectTag
-                    onClick={() => handleTagChange("Web")}
-                    name={`${lang.tab2}`}
-                    isSelected={tag === "Web"}
-                />
-                <ProjectTag
-                    onClick={() => handleTagChange("Mobile")}
-                    name={`${lang.tab3}`}
-                    isSelected={tag === "Mobile"}
-                />
-            </div>
+        <div>
             <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 mt-4">
-                {filteredProjects.map((project, index) => (
+                {data.map((project, index) => (
                     <motion.li
                         key={index}
                         variants={cardVariants}
@@ -66,6 +39,7 @@ function ProjectTab({ data, lang }: IProjectTab) {
                         <ProjectCard
                             key={project.id}
                             title={project.title}
+                            more={lang.more}
                             description={project.description}
                             imgUrl={project.image}
                             gitUrl={project.gitUrl}
