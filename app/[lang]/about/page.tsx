@@ -1,7 +1,7 @@
 import { getDictionary } from "@/lib/dictionary";
 import MyAbout from "../components/myAbout";
 import { Locale } from "@/i18n.config";
-import about_img from '../../../public/images/about-image.png'
+import about_img from '../../../public/images/about.jpg'
 import Image from "next/image";
 
 const AboutSection = async ({ params: { lang } }: {

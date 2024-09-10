@@ -17,13 +17,13 @@ const TabButton = ({ active, selectTab, children }: ITabButton) => {
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-white text-lg ${buttonClasses}`}>
+      <p className={`font-semibold hover:text-white text-lg ${buttonClasses}`}>
         {children}
       </p>
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-1 bg-[#00FFFF] mt-2 mr-3"
+        className="h-1 bg-[#00FFFF] mt-2 w-full mx-auto"
       ></motion.div>
     </button>
   );
