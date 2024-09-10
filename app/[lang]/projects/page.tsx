@@ -87,7 +87,7 @@ async function page({ params: { lang } }: {
                 <h2 className="text-center text-4xl font-bold text-white mt-1 md:mt-4 mb-6 md:mb-8">
                     {project.title}
                 </h2>
-                <ProjectTab lang={project} data={projectsData} />
+                <ProjectTab data={projectsData} />
             </section>
         </div>
     )

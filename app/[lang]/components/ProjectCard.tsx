@@ -9,10 +9,9 @@ interface IProjectCard {
     description: string;
     gitUrl: string;
     previewUrl: string
-    more: string
 }
 
-const ProjectCard = ({ imgUrl, more, title, description, gitUrl, previewUrl }: IProjectCard) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }: IProjectCard) => {
     const [ismore, setMore] = useState(false)
 
     const handleMore = () => setMore(!ismore)

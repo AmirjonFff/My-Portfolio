@@ -10,7 +10,7 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
     return (
         <section className="container relative mt-10 mx-auto px-20 py-5 sm:py-14 md:py-16 lg:py-36">
             <div className="absolute z-0 rotate-[30deg] bg_gradient -left-72 -top-32 w-[800px] h-[800px] rounded-full">
-
+df
             </div>
             <div className="grid relative z-10 grid-cols-1 sm:grid-cols-12">
                 <motion.div

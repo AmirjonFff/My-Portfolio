@@ -13,10 +13,9 @@ interface IProjectTab {
         gitUrl: string,
         previewUrl: string,
     }[],
-    lang: IProjectsLang;
 }
 
-function ProjectTab({ data, lang }: IProjectTab) {
+function ProjectTab({ data }: IProjectTab) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
@@ -39,7 +38,6 @@ function ProjectTab({ data, lang }: IProjectTab) {
                         <ProjectCard
                             key={project.id}
                             title={project.title}
-                            more={lang.more}
                             description={project.description}
                             imgUrl={project.image}
                             gitUrl={project.gitUrl}
