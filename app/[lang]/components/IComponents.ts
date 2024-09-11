@@ -27,6 +27,7 @@ export interface IContactLang {
 export interface ContactForm {
     name: string;
     namePlac: string;
+    email: string;
     subject: string;
     subjectPlac: string;
     message: string;

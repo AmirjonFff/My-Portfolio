@@ -69,11 +69,12 @@
     }
   },
   "contact": {
-    "title": "Let's Connect",
-    "desc": "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "title": "Let's Get in Touch",
+    "desc": "If you have any questions or would like to discuss a potential project, feel free to reach out. You can contact me via email, phone, or by filling out the contact form below. I am available for freelance opportunities, collaborations, or consultations. I look forward to hearing from you!",
     "contactForm": {
       "name": "Your Name",
       "namePlac": "Amirjon",
+      "email": "Your email",
       "subject": "Subject",
       "subjectPlac": "Just saying hi",
       "message": "Message",

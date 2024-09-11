@@ -1,10 +1,13 @@
 import GithubIcon from "../../../public/github-icon.svg";
 import InstIcon from "../../../public/ins_img.png";
+import LiIcon from "../../../public/linkedin-icon.svg";
+import TgIcon from "../../../public/tg2_icon.png";
 import { getDictionary } from "@/lib/dictionary";
 import Link from "next/link";
 import Image from "next/image";
 import FormContact from "../components/formContact";
 import { Locale } from "@/i18n.config";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 
 async function page({ params: { lang } }: {
@@ -17,20 +20,34 @@ async function page({ params: { lang } }: {
                 id="contact"
                 className="grid md:grid-cols-2 md:my-12 py-24 px-5 gap-4 relative w-[1300px] m-auto"
             >
-                <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] bg_gradient from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-                <div className="mb-10 ">
+                <div className="bg_gradient -bottom-60 -left-80"></div>
+                <div className="mb-10 relative z-10">
                     <h5 className="text-4xl font-bold text-white my-2">
                         {contact.title}
                     </h5>
-                    <p className="text-[#ADB7BE] my-5 max-w-md text-xl">
+                    <p className="text-[#ADB7BE] mt-5 m max-w-md text-xl">
                         {contact.desc}
                     </p>
-                    <div className="socials flex items-center gap-2">
+                    <div className="text-[#ADB7BE] text-lg mt-2 flex gap-10">
+                        <div className="">
+                            <EnvelopeIcon className="w-6 inline" /> amirjonif@gmail.com
+                        </div>
+                        <div className="">
+                            <PhoneIcon className="w-6 inline" /> +992 91 744 75 17
+                        </div>
+                    </div>
+                    <div className="socials flex items-center mt-4 gap-2">
                         <Link href="https://github.com/AmirjonFff">
-                            <Image src={GithubIcon} alt="Github Icon" />
+                            <Image src={GithubIcon} alt="Github Icon"/>
                         </Link>
-                        <Link href="https://www.instagram.com/amin.khuroson/">
-                            <Image className="w-[38px]" src={InstIcon} alt="Linkedin Icon" />
+                        <Link href="https://www.instagram.com/af.tjk/">
+                            <Image className="w-[38px]" src={InstIcon} alt="Instagram Icon"/>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/aking-undefined-1a7278304/">
+                            <Image className="w-[45px]" src={LiIcon} alt="Linkedin Icon"/>
+                        </Link>
+                        <Link href="https://web.telegram.org/k/#@aking_0102">
+                            <Image className="w-[42px]" src={TgIcon} alt="Telegram Icon"/>
                         </Link>
                     </div>
                 </div>

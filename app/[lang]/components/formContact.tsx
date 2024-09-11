@@ -31,7 +31,7 @@ function FormContact({ lang }: IFormContact) {
     };
 
     return (
-        <div>
+        <div className='relative z-10'>
             <form ref={form} onSubmit={sendEmail} className="flex flex-col">
                 <input name="to_name" className="hidden" value={"Amirjon"} type="text" />
                 <div className="mb-6">
@@ -46,7 +46,7 @@ function FormContact({ lang }: IFormContact) {
                         type="text"
                         id="text"
                         required
-                        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                        className="bg-[#100e2b] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                         placeholder={lang.namePlac}
                     />
                 </div>
@@ -55,14 +55,14 @@ function FormContact({ lang }: IFormContact) {
                         htmlFor="email"
                         className="text-white block mb-2 text-sm font-medium"
                     >
-                        Your email
+                        {lang.email}
                     </label>
                     <input
                         name="from_email"
                         type="email"
                         id="email"
                         required
-                        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                        className="bg-[#100e2b] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                         placeholder="jacob@google.com"
                     />
                 </div>
@@ -78,7 +78,7 @@ function FormContact({ lang }: IFormContact) {
                         type="text"
                         id="subject"
                         required
-                        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                        className="bg-[#100e2b] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                         placeholder={lang.subjectPlac}
                     />
                 </div>
@@ -92,13 +92,13 @@ function FormContact({ lang }: IFormContact) {
                     <textarea
                         name="message"
                         id="message"
-                        className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                        className="bg-[#100e2b] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                         placeholder={lang.messagePlac}
                     />
                 </div>
                 <button
                     type="submit"
-                    className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+                    className="bg-gradient-to-br from-[#00FFFF] to-[#87CEEB] text-white font-medium py-2.5 px-5 rounded-lg w-full"
                 >
                     {lang.btn}
                 </button>
