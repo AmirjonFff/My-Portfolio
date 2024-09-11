@@ -12,12 +12,12 @@ async function page({ params: { lang } }: {
 }) {
     const { contact } = await getDictionary(lang)
     return (
-        <div className="flex h-screen lg:overflow-hidden items-center">
+        <div className="flex h-screen lg:overflow-hidden items-center !bg-[#17153B]">
             <section
                 id="contact"
                 className="grid md:grid-cols-2 md:my-12 py-24 px-5 gap-4 relative w-[1300px] m-auto"
             >
-                <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+                <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] bg_gradient from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
                 <div className="mb-10 ">
                     <h5 className="text-4xl font-bold text-white my-2">
                         {contact.title}

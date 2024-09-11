@@ -25,7 +25,7 @@ function MyAbout({ TAB_DATA, lang }: IMyAbout) {
 
     return (
         <div className="mt-4 relative z-10 md:mt-0 text-left flex flex-col h-full">
-            <div className="absolute -z-10 bg_gradient2 -right-52 -bottom-20 w-[600px] h-[600px] rounded-full">
+            <div className="-z-10 bg_gradient -right-64 -bottom-25">
             </div>
             <h2 className="text-2xl font-bold text-white mb-2 text-center">{lang.title}</h2>
             {
