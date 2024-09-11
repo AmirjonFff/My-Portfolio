@@ -56,12 +56,12 @@
       "desc": "This is the official website of the Vesto-Education educational center, built using React and TypeScript. It is integrated with a Learning Management System (LMS), providing a seamless experience for managing courses and educational content."
     },
     "pj6": {
-      "title": "Fullstack TO DO LIST on Express.js React and TypeScript",
-      "desc": "The site is built exclusively on Express.js React and TypeScript. This is my first full stack offer. Has authorization."
+      "title": "TO-DO List",
+      "desc": "This is my full—fledged application. The frontend is designed using React and TypeScript, and the backend is based on Express.js. The application includes login and authorization features, ensuring secure access for task management."
     },
     "pj7": {
-      "title": "React Calculator",
-      "desc": "The application is built on React and JavaScript."
+      "title": "Calculator",
+      "desc": "The project is a web application built with React and JavaScript. It includes all the essential functions of a calculator, providing a convenient and user-friendly experience"
     },
     "pj8": {
       "title": "Next 82-Towers",
