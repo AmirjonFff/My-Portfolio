@@ -44,8 +44,8 @@
       "desc": "A web application for managing a job vacancy website, built with React and TypeScript, includes login and authorization features. This ensures secure and convenient management of vacancies and users through an administrative panel."
     },
     "pj2": {
-      "title": "Nest Real Time Chat",
-      "desc": "The site is built on Nest and TypeScript. Has Socket.io."
+      "title": "Chat",
+      "desc": "This website is built exclusively with Nest and TypeScript. It is my full-stack application. The project features Socket.io for real-time communication, ensuring instant updates and smooth user interactions."
     },
     "pj4": {
       "title": "Online Store",

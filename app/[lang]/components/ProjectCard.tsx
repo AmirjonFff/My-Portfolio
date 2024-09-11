@@ -38,7 +38,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }: IProjec
             </div>
             <div className="text-white flex flex-col items-start rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
                 <div className="flex justify-between w-full items-center">
-                    <h5 className="text-xl font-semibold mb-2">{title}</h5>
+                    <h5 onClick={handleMore} className="text-xl cursor-pointer font-semibold mb-2">{title}</h5>
                     {ismore ? <ArrowUpIcon onClick={handleMore} className="w-6 text-[#87CEEB] cursor-pointer" /> : <ArrowDownIcon onClick={handleMore} className="w-6 text-[#87CEEB] cursor-pointer" />}
                 </div>
                 <p className="text-[#ADB7BE]">{ismore ? description : description.slice(0, 50)}{!ismore && '...'}</p>

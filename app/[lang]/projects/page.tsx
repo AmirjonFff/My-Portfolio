@@ -27,15 +27,6 @@ async function page({ params: { lang } }: {
             previewUrl: "https://af-calculator.vercel.app/",
         },
         {
-            id: 8,
-            title: project.pj8.title,
-            description: project.pj8.desc,
-            image: towers_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/82-TOWERS_mySecondTsProject",
-            previewUrl: "https://82towers.tj/",
-        },
-        {
             id: 1,
             title: project.pj1.title,
             description: project.pj1.desc,
@@ -43,15 +34,6 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/AvestoJobsFrontAdmin",
             previewUrl: "https://avesto-jobs-front-admin.vercel.app/",
-        },
-        {
-            id: 2,
-            title: project.pj2.title,
-            description: project.pj2.desc,
-            image: chat_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/chat-socket.io/tree/main",
-            previewUrl: "https://amir-chat.onrender.com/chat",
         },
         {
             id: 4,
@@ -79,12 +61,30 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://af-height-todos.vercel.app/",
-        }
+        },
+        {
+            id: 8,
+            title: project.pj8.title,
+            description: project.pj8.desc,
+            image: towers_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff/82-TOWERS_mySecondTsProject",
+            previewUrl: "https://82towers.tj/",
+        },
+        {
+            id: 2,
+            title: project.pj2.title,
+            description: project.pj2.desc,
+            image: chat_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff/chat-socket.io/tree/main",
+            previewUrl: "https://amir-chat.onrender.com/chat",
+        },
     ];
     return (
-        <div className='bg-[#17153B] min-h-screen'>
-            <section className="projects max-w-[1300px] px-5 mx-auto pb-8 pt-24">
-                <h2 className="text-center text-4xl font-bold text-white mt-1 md:mt-4 mb-6 md:mb-8">
+        <div className='bg-[#17153B] h-screen'>
+            <section className="max-w-[1330px] flex flex-col h-screen px-5 mx-auto pt-20">
+                <h2 className="txt_bottom w-auto sticky text-center text-4xl font-bold text-white md:mt-4 mb-6 md:mb-3">
                     {project.title}
                 </h2>
                 <ProjectTab data={projectsData} />

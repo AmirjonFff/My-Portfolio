@@ -12,7 +12,7 @@ function Nav({ lang, params }: INav) {
     const [active, setActive] = useState()
 
     return (
-        <div className='hidden md:block'>
+        <div className='hidden md:block absolute left-[50%] -translate-x-[50%]'>
             <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
                 <li>
                     <Link className={`text-[#ADB7BE] !text-[18px] hover:text-white ${active === "about" && "text-[white]"}`} href={`/${params}/about`}>{lang.about}</Link>
