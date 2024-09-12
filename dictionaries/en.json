@@ -22,7 +22,12 @@
   },
   "about": {
     "title": "Frontend developer with experience creating modern web applications",
+    "titleBitrix": "Experience working with Bitrix24 in setting up functionality, automating business processes and developing websites",
     "description": "My name is Amirjan Faizmuhammad. I have more than one year of experience in development. I have deep knowledge and skills in creating modern, adaptive and productive web applications. I specialize in HTML, CSS, JavaScript, TypeScript and React. I actively use Redux for state management and Next.js for server rendering and creating dynamic web pages. I have implemented many projects using these technologies. * I can work with PostgreSQL and MongoDb to create and manage databases in web applications. Over the course of my career, I have developed many websites, paying special attention to their performance, adaptability and usability.",
+    "descriptionBitrix": "I have extensive experience working with the Bitrix24 platform and can customize its functionality for effective business management. I specialize in creating and configuring business processes and robots to automate routine tasks and increase workflow productivity. I am able to work professionally with the Bitrix CRM system, customizing it to the specific needs of the company to optimize sales and customer service.*In addition, I have the skills to automatically generate documents through business processes using PHP code, which significantly speeds up and simplifies the paperwork. I also have experience in creating full-fledged websites on the Bitrix24 platform, including the development and configuration of a Knowledge Base for companies, which makes it easy to organize and distribute corporate information within the team.",
+    "btnTitle": "View skills by",
+    "btnDesc": "Web-development",
+    "btnDescBitrix": "Bitrix-development",
     "blockTab": {
       "title1": "Skills",
       "title2": "Education",

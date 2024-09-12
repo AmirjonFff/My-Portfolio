@@ -25,14 +25,7 @@ export interface IContactLang {
 }
 
 export interface ContactForm {
-    name: string;
-    namePlac: string;
-    email: string;
-    subject: string;
-    subjectPlac: string;
-    message: string;
-    messagePlac: string;
-    btn: string;
+    [key: string]: string;
 }
 
 
@@ -40,6 +33,11 @@ export interface IAboutLang {
     title: string;
     description: string;
     blockTab: BlockTab;
+    descriptionBitrix: string;
+    titleBitrix: string;
+    btnTitle: string;
+    btnDescBitrix: string;
+    btnDesc: string;
 }
 interface BlockTab {
     title1: string;

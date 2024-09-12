@@ -8,7 +8,7 @@ interface ITabButton {
 
 function BlockTab({ tab, handleTabChange, lang }: ITabButton) {
     return (
-        <div className="flex flex-row justify-between mt-8 w-[480px] mx-auto border-b-[1px] border-[#33353F]">
+        <div className="flex flex-row justify-between mt-6 w-[480px] mx-auto border-b-[1px] border-[#33353F]">
             <TabButton
                 selectTab={() => handleTabChange("skills")}
                 active={tab === "skills"}

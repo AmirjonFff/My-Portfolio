@@ -25,7 +25,7 @@ function ProjectTab({ data }: IProjectTab) {
     };
 
     return (
-        <ul ref={ref} className="block_project grid overflow-auto md:grid-cols-3 px-3 pt-5 gap-8 md:gap-12">
+        <ul ref={ref} className="block_project grid overflow-auto md:grid-cols-3 px-3 py-5 gap-8 md:gap-12">
             {data.map((project, index) => (
                 <motion.li
                     key={index}
