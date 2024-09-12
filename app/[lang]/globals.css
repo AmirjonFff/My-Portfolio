@@ -43,10 +43,22 @@ body {
 
 
 .block_project::-webkit-scrollbar {
-    width: 5px; 
-  }
+    width: 5px;
+}
 
-  .block_project::-webkit-scrollbar-thumb {
+.block_project::-webkit-scrollbar-thumb {
     background: radial-gradient(circle, #87CEEB 20%, #17153B 60%);
-    border-radius: 10px; 
-  }
+    border-radius: 10px;
+}
+
+.project_icon {
+    width: 28px;
+    display: inline;
+    color: #00FFFF;
+    transform: translate(4px);
+    
+}
+
+.project_icon:hover{
+    transform: rotate(180deg);
+}

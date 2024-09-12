@@ -2,7 +2,6 @@
 import React, { useRef } from 'react'
 import { useInView, motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
-import { IProjectsLang } from './IComponents';
 interface IProjectTab {
     data: {
         id: number,

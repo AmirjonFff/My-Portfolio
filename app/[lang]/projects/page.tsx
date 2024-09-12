@@ -4,7 +4,6 @@ import { getDictionary } from "@/lib/dictionary";
 import admin_img from '../../../public/images/projects/admin_img.png';
 import chat_img from '../../../public/images/projects/chat_img.png';
 import store_img from '../../../public/images/projects/store.png';
-import portfolio_img from '../../../public/images/projects/portfolio_img.png';
 import vesto_img from '../../../public/images/projects/vesto_img.png';
 import todo_img from '../../../public/images/projects/todo_img.png';
 import calculator_Img from '../../../public/images/projects/calculator_Img.png';
@@ -86,6 +85,7 @@ async function page({ params: { lang } }: {
             <section className="max-w-[1330px] flex flex-col h-screen px-5 mx-auto pt-20">
                 <h2 className="txt_bottom w-auto sticky text-center text-4xl font-bold text-white md:mt-4 mb-6 md:mb-3">
                     {project.title}
+                    {/* <ChevronDownIcon strokeWidth={2} className="project_icon" /> */}
                 </h2>
                 <ProjectTab data={projectsData} />
             </section>
