@@ -35,9 +35,9 @@ const AchievementsSection = ({ page: { achievementsSection } }: IAchievementsSec
     ];
 
     return (
-        <div className="md:w-[700px] bg-[#100e2b] md:max-w-full lg:w-[800px] xl:w-[1200px] max-w-[500px] mx-auto">
-            
-            <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
+        <div className="w-full sm:w-[550px] md:w-[650px] relative z-20 bg-[#100e2b] sm:mb-10 md:max-w-full lg:w-[800px] xl:w-[1200px] mx-auto">
+
+            <div className="sm:border-[#33353F] sm:border rounded-md py-5 lg:py-8 flex flex-col sm:flex-row items-center justify-around">
                 {achievementsList.map((achievement, index) => {
                     return (
                         <div

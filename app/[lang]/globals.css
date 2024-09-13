@@ -5,7 +5,7 @@
 
 body {
     min-height: 100vh;
-    background-color: #121212;
+    background: #17153B;
 }
 
 .navTel {
@@ -56,9 +56,9 @@ body {
     display: inline;
     color: #00FFFF;
     transform: translate(4px);
-    
+
 }
 
-.project_icon:hover{
+.project_icon:hover {
     transform: rotate(180deg);
 }

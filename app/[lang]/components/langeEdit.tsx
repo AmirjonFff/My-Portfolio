@@ -47,9 +47,8 @@ export function MenuCustomList() {
 
   return (
     <Menu open={openMenu} handler={setOpenMenu} allowHover>
-      <MenuHandler className='py-0 text-white flex items-center gap-1'>
+      <MenuHandler className='py-0 px-0 text-white flex items-center gap-1'>
         <Button
-          variant="text"
           className="flex items-center gap-3 text-lg font-normal uppercase tracking-normal"
         >
           {lang}
@@ -60,7 +59,7 @@ export function MenuCustomList() {
           />
         </Button>
       </MenuHandler>
-      <MenuList className="relative border-[#33353F] z-10 bg-[#131131] py-1 -translate-y-4 overflow-visible">
+      <MenuList className="relative border-[#33353F] z-50 bg-[#131131] py-1 -translate-y-4 overflow-visible">
         <div>
           <ul className='flex flex-col gap-1'>
             {i18n.locales.map(locale => {

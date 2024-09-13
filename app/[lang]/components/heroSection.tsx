@@ -8,8 +8,8 @@ import { IAchievementsSection } from "./IComponents";
 const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
 
     return (
-        <section className="container relative mt-10 mx-auto px-20 py-5 sm:py-14 md:py-16 lg:py-36">
-            <div className="bg_gradient -left-72 -top-32"></div>
+        <section className="container relative mt-10 px-7 mx-auto md:px-10 xl:px-20 py-5 sm:py-14 md:py-16 lg:py-24 xl:py-36">
+            <div className="bg_gradient hidden sm:block -left-72 -top-32"></div>
             <div className="grid relative z-10 grid-cols-1 sm:grid-cols-12">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
@@ -17,8 +17,8 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                     transition={{ duration: 0.5 }}
                     className="col-span-8 place-self-center text-center sm:text-left justify-center sm:place-self-start"
                 >
-                    <h1 className="text-white mb-4 leading-[2] lg:leading-[7] mt-3 font-extrabold">
-                        <span className="text-transparent text-3xl md:text-4xl lg:text-6xl xl:text-7xl bg-clip-text bg-gradient-to-r from-[#00FFFF] to-[#87CEEB]">
+                    <h1 className="text-white mb-0 xl:mb-4 leading-[2] md:leading-[3] lg:leading-[4] xl:leading-[7] mt-3 font-extrabold">
+                        <span className="text-transparent text-3xl md:text-4xl lg:text-5xl xl:text-7xl bg-clip-text bg-gradient-to-r from-[#00FFFF] to-[#87CEEB]">
                             {heroSection.title}
                         </span>
                         <br></br>
@@ -32,10 +32,10 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                             wrapper="span"
                             speed={20}
                             repeat={Infinity}
-                            className="text-[25px] md:text-[35px] lg:text-6xl xl:text-7xl"
+                            className="text-[25px] md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
                         />
                     </h1>
-                    <p className="text-[#ADB7BE] w-[80%] text-base sm:text-lg mb-6 lg:text-xl">
+                    <p className="text-[#ADB7BE] sm:w-[80%] text-sm mb-6 xl:text-xl">
                         {heroSection.description}
                     </p>
                     <div>
@@ -62,13 +62,11 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                     transition={{ duration: 0.5 }}
                     className="col-span-4 row-start-1 col-start-1 sm:row-start-auto sm:col-start-auto place-self-center mt-4 lg:mt-0"
                 >
-                    <div className="rounded-full bg-[#100e2b]  w-[250px] h-[250px] lg:w-[430px] lg:h-[430px] relative">
+                    <div className="rounded-full bg-[#100e2b]  w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] 2xl:w-[430px] 2xl:h-[430px] relative">
                         <img
                             src="https://png.pngtree.com/png-vector/20231108/ourmid/pngtree-programmer-it-developer-png-image_10439723.png"
                             alt="hero image"
-                            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            width={350}
-                            height={350}
+                            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-[80%]"
                         />
                     </div>
                 </motion.div>

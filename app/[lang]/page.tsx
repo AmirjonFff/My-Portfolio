@@ -11,7 +11,7 @@ export default async function Home({
   const { page } = await getDictionary(lang)
 
   return (
-    <section className='flex min-h-screen flex-col bg-[#17153B]'>
+    <section className='flex min-h-screen flex-col'>
       <HeroSection page = {page} />
       <AchievementsSection page = {page} />
     </section>

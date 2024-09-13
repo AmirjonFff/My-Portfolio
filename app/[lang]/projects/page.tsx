@@ -80,6 +80,7 @@ async function page({ params: { lang } }: {
             previewUrl: "https://amir-chat.onrender.com/chat",
         },
     ];
+    
     return (
         <div className='bg-[#17153B] h-screen'>
             <section className="max-w-[1330px] flex flex-col h-screen px-5 mx-auto pt-20">

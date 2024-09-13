@@ -52,9 +52,9 @@ const AboutSection = async ({ params: { lang } }: {
     },
   ];
   return (
-    <section className="text-white bg-[#17153B] overflow-hidden min-h-screen flex items-center" id="about">
-      <div className="md:grid relative md:grid-cols-2 gap-8 items-center px-5 w-[1300px] mx-auto py-8 xl:gap-16 sm:py-16">
-        <Image src={about_img} className="mt-[100px] relative z-20 md:mt-0" width={500} height={500} alt="about_img" />
+    <section className="text-white overflow-hidden min-h-screen flex items-center" id="about">
+      <div className="container md:grid relative lg:grid-cols-2 items-center px-4 md:py-20 md:px-20 lg:px-0 lg:py-24 xl:px-14 2xl:px-32 mx-auto py-16 xl:gap-20">
+        <Image src={about_img} className="mt-[100px] hidden lg:block relative z-20 md:mt-0 w-[84%]" alt="about_img" />
         <MyAbout TAB_DATA={TAB_DATA} lang={about} />
       </div>
     </section>
