@@ -30,7 +30,7 @@ export function MenuCustomList() {
 
   const imgs = [
     {
-      id: 'taj',
+      id: 'tj',
       img: taj,
     },
     {

@@ -36,12 +36,12 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }: IProjec
                     </Link>
                 </div>
             </div>
-            <div className="text-white flex flex-col items-start rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
+            <div className="text-white flex flex-col items-start rounded-b-xl mt-2 lg:mt-0 xl:mt-3 bg-[#181818]py-6 px-4">
                 <div className="flex justify-between w-full items-center">
-                    <h5 onClick={handleMore} className="text-xl cursor-pointer font-semibold mb-2">{title}</h5>
-                    {ismore ? <ArrowUpIcon onClick={handleMore} className="w-6 text-[#87CEEB] cursor-pointer" /> : <ArrowDownIcon onClick={handleMore} className="w-6 text-[#87CEEB] cursor-pointer" />}
+                    <h5 onClick={handleMore} className="md:text-xl lg:text-lg xl:text-xl cursor-pointer font-semibold mb-2">{title}</h5>
+                    {ismore ? <ArrowUpIcon onClick={handleMore} className="w-6 sm:w-5 md:w-6 lg:w-5 xl:w-6 text-[#87CEEB] cursor-pointer" /> : <ArrowDownIcon onClick={handleMore} className="w-6 sm:w-5 md:w-6 lg:w-5 xl:w-6 text-[#87CEEB] cursor-pointer" />}
                 </div>
-                <p className="text-[#ADB7BE]">{ismore ? description : description.slice(0, 50)}{!ismore && '...'}</p>
+                <p className="text-[#ADB7BE] text-sm md:text-base lg:text-sm xl:text-base">{ismore ? description : description.slice(0, 50)}{!ismore && '...'}</p>
             </div>
         </div>
     );

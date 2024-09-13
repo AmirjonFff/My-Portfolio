@@ -83,8 +83,8 @@ async function page({ params: { lang } }: {
     
     return (
         <div className='bg-[#17153B] h-screen'>
-            <section className="max-w-[1330px] flex flex-col h-screen px-5 mx-auto pt-20">
-                <h2 className="txt_bottom w-auto sticky text-center text-4xl font-bold text-white md:mt-4 mb-6 md:mb-3">
+            <section className="container xl:px-16 2xl:px-28 flex flex-col h-screen mx-auto pt-20">
+                <h2 className="txt_bottom w-auto sticky text-center text-2xl md:text-4xl font-bold text-white md:mt-4 mb-6 md:mb-3">
                     {project.title}
                     {/* <ChevronDownIcon strokeWidth={2} className="project_icon" /> */}
                 </h2>

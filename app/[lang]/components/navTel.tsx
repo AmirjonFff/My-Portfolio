@@ -26,7 +26,7 @@ export function NavTel({ lang, params }: INav) {
 
   return (
     <React.Fragment>
-      <Button className="md:hidden" variant="text" size="lg" onClick={openDrawer}>
+      <Button className="md:hidden px-0" variant="text" size="lg" onClick={openDrawer}>
         {open ? (
           <XMarkIcon className="h-8 w-8 stroke-2 text-white" />
         ) : (
