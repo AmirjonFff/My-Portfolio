@@ -7,4 +7,12 @@ const dictionaries = {
   en: () => import('@/dictionaries/en.json').then(module => module.default),
 }
 
-export const getDictionary = async (locale: Locale) => dictionaries[locale]()
+export const getDictionary = async (locale: Locale) => {
+  const loadDictionary = dictionaries[locale];
+
+  if (!loadDictionary) {
+    throw new Error(`Dictionary for locale "${locale}" not found`);
+  }
+
+  return loadDictionary();  // Вызов функции для загрузки словаря
+}

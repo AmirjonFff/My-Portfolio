@@ -1,7 +1,6 @@
 "use client";
 import toast from 'react-hot-toast';
 
-
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import { ContactForm } from './IComponents';
@@ -27,14 +26,14 @@ function FormContact({ lang }: IFormContact) {
 
             form.current.reset();
         }
-        
+
     };
 
     return (
         <div className='relative z-10'>
-            <form ref={form} onSubmit={sendEmail} className="flex flex-col">
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 md:gap-3 lg:gap-6">
                 <input name="to_name" className="hidden" value={"Amirjon"} type="text" />
-                <div className="mb-6">
+                <div>
                     <label
                         htmlFor="email"
                         className="text-white block mb-2 text-sm font-medium"
@@ -50,7 +49,7 @@ function FormContact({ lang }: IFormContact) {
                         placeholder={lang.namePlac}
                     />
                 </div>
-                <div className="mb-6">
+                <div>
                     <label
                         htmlFor="email"
                         className="text-white block mb-2 text-sm font-medium"
@@ -66,7 +65,7 @@ function FormContact({ lang }: IFormContact) {
                         placeholder="jacob@google.com"
                     />
                 </div>
-                <div className="mb-6">
+                <div>
                     <label
                         htmlFor="subject"
                         className="text-white block text-sm mb-2 font-medium"
@@ -82,7 +81,7 @@ function FormContact({ lang }: IFormContact) {
                         placeholder={lang.subjectPlac}
                     />
                 </div>
-                <div className="mb-6">
+                <div>
                     <label
                         htmlFor="message"
                         className="text-white block text-sm mb-2 font-medium"

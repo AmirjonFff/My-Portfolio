@@ -44,7 +44,7 @@ function MyAbout({ TAB_DATA, lang }: IMyAbout) {
             </p>
             {!bitrix && <div>
                 <BlockTab lang={lang.blockTab} tab={tab} handleTabChange={handleTabChange} />
-                <div className="mt-8 sm:w-[470px] h-[70px] mx-auto">
+                <div className="mt-8 sm:w-[470px] h-[100px] sm:h-[70px] mx-auto">
                     {TAB_DATA.find((t) => t.id === tab)?.content}
                 </div>
             </div>}

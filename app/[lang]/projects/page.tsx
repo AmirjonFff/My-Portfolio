@@ -17,6 +17,33 @@ async function page({ params: { lang } }: {
 
     const projectsData = [
         {
+            id: 5,
+            title: project.pj5.title,
+            description: project.pj5.desc,
+            image: vesto_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff",
+            previewUrl: "https://af-vesto.vercel.app/",
+        },
+        {
+            id: 4,
+            title: project.pj4.title,
+            description: project.pj4.desc,
+            image: store_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff/Online-Store",
+            previewUrl: "https://af-online-store.vercel.app/",
+        },
+        {
+            id: 8,
+            title: project.pj8.title,
+            description: project.pj8.desc,
+            image: towers_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff/82-TOWERS_mySecondTsProject",
+            previewUrl: "https://82towers.tj/",
+        },
+        {
             id: 7,
             title: project.pj7.title,
             description: project.pj7.desc,
@@ -35,24 +62,6 @@ async function page({ params: { lang } }: {
             previewUrl: "https://avesto-jobs-front-admin.vercel.app/",
         },
         {
-            id: 4,
-            title: project.pj4.title,
-            description: project.pj4.desc,
-            image: store_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/Online-Store",
-            previewUrl: "https://af-online-store.vercel.app/",
-        },
-        {
-            id: 5,
-            title: project.pj5.title,
-            description: project.pj5.desc,
-            image: vesto_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff",
-            previewUrl: "https://af-vesto.vercel.app/",
-        },
-        {
             id: 6,
             title: project.pj6.title,
             description: project.pj6.desc,
@@ -60,16 +69,7 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://af-height-todos.vercel.app/",
-        },
-        {
-            id: 8,
-            title: project.pj8.title,
-            description: project.pj8.desc,
-            image: towers_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/82-TOWERS_mySecondTsProject",
-            previewUrl: "https://82towers.tj/",
-        },
+        },      
         {
             id: 2,
             title: project.pj2.title,
@@ -80,11 +80,11 @@ async function page({ params: { lang } }: {
             previewUrl: "https://amir-chat.onrender.com/chat",
         },
     ];
-    
+
     return (
         <div className='bg-[#17153B] h-screen'>
             <section className="container xl:px-16 2xl:px-28 flex flex-col h-screen mx-auto pt-20">
-                <h2 className="txt_bottom w-auto sticky text-center text-2xl md:text-4xl font-bold text-white md:mt-4 mb-6 md:mb-3">
+                <h2 className="border-[#87CEEB] outline-1 border-b w-auto sticky text-center text-2xl md:text-4xl font-bold mb-[0.5px] pb-2 md:pb-3 text-white md:mt-4">
                     {project.title}
                     {/* <ChevronDownIcon strokeWidth={2} className="project_icon" /> */}
                 </h2>
