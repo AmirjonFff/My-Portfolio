@@ -46,7 +46,7 @@ async function page({ params: { lang } }: {
                         <Link href="https://www.linkedin.com/in/aking-undefined-1a7278304/">
                             <Image className="w-[45px]" src={LiIcon} alt="Linkedin Icon" />
                         </Link>
-                        <Link href="https://web.telegram.org/k/#@aking_0102">
+                        <Link href="tg://resolve?domain=aking_0102">
                             <Image className="w-[42px]" src={TgIcon} alt="Telegram Icon" />
                         </Link>
                     </div>
