@@ -4,18 +4,19 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { IAchievementsSection } from "./IComponents";
+import Image from "next/image";
 
 const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
 
     return (
-        <section className="container relative mt-10 px-7 mx-auto md:px-10 xl:px-20 py-5 sm:py-14 md:py-16 lg:py-24 xl:py-36">
-            <div className="bg_gradient hidden sm:block -left-72 -top-32"></div>
-            <div className="grid relative z-10 grid-cols-1 sm:grid-cols-12">
+        <section className="container relative py-5 mx-auto mt-10 px-7 md:px-10 xl:px-20 sm:py-14 md:py-16 lg:py-24 xl:py-36">
+            <div className="hidden bg_gradient sm:block -left-72 -top-32"></div>
+            <div className="relative z-10 grid grid-cols-1 sm:grid-cols-12">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
-                    className="col-span-8 place-self-center text-center sm:text-left justify-center sm:place-self-start"
+                    className="justify-center col-span-8 text-center place-self-center sm:text-left sm:place-self-start"
                 >
                     <h1 className="text-white mb-0 xl:mb-4 leading-[2] md:leading-[3] lg:leading-[4] xl:leading-[7] mt-3 font-extrabold">
                         <span className="text-transparent text-3xl md:text-4xl lg:text-5xl xl:text-7xl bg-clip-text bg-gradient-to-r from-[#00FFFF] to-[#87CEEB]">
@@ -60,13 +61,16 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
-                    className="col-span-4 row-start-1 col-start-1 sm:row-start-auto sm:col-start-auto place-self-center mt-4 lg:mt-0"
+                    className="col-span-4 col-start-1 row-start-1 mt-4 sm:row-start-auto sm:col-start-auto place-self-center lg:mt-0"
                 >
                     <div className="rounded-full bg-[#100e2b]  w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] 2xl:w-[430px] 2xl:h-[430px] relative">
-                        <img
-                            src="https://png.pngtree.com/png-vector/20231108/ourmid/pngtree-programmer-it-developer-png-image_10439723.png"
+                        <Image
+                            src="/hero.png"
                             alt="hero image"
                             className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-[80%]"
+                            width={800} // Укажи реальные размеры изображения по ширине
+                            height={600} // Укажи реальные размеры изображения по высоте
+                            priority={true} // Приоритетное изображение для загрузки
                         />
                     </div>
                 </motion.div>
