@@ -10,7 +10,6 @@ interface IFormContact {
 }
 
 function FormContact({ lang }: IFormContact) {
-    toast.success("Сообшения успешно отправлено")
 
     const form = useRef<HTMLFormElement | null>(null);
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
