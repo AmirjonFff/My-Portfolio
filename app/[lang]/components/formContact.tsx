@@ -22,6 +22,7 @@ function FormContact({ lang }: IFormContact) {
                     console.log(result.text);
                 }, (error) => {
                     console.log(error.text);
+                    toast.error("Ошибка при отправлении сообшения")
                 });
 
             form.current.reset();
@@ -36,7 +37,7 @@ function FormContact({ lang }: IFormContact) {
                 <div>
                     <label
                         htmlFor="email"
-                        className="text-white block mb-2 text-sm font-medium"
+                        className="block mb-2 text-sm font-medium text-white"
                     >
                         {lang.name}
                     </label>
@@ -52,7 +53,7 @@ function FormContact({ lang }: IFormContact) {
                 <div>
                     <label
                         htmlFor="email"
-                        className="text-white block mb-2 text-sm font-medium"
+                        className="block mb-2 text-sm font-medium text-white"
                     >
                         {lang.email}
                     </label>
@@ -68,7 +69,7 @@ function FormContact({ lang }: IFormContact) {
                 <div>
                     <label
                         htmlFor="subject"
-                        className="text-white block text-sm mb-2 font-medium"
+                        className="block mb-2 text-sm font-medium text-white"
                     >
                         {lang.subject}
                     </label>
@@ -84,7 +85,7 @@ function FormContact({ lang }: IFormContact) {
                 <div>
                     <label
                         htmlFor="message"
-                        className="text-white block text-sm mb-2 font-medium"
+                        className="block mb-2 text-sm font-medium text-white"
                     >
                         {lang.message}
                     </label>
