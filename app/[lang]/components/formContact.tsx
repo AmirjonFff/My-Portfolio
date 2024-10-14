@@ -1,5 +1,5 @@
 "use client";
-import toast from 'react-hot-toast';
+import { toast } from 'react-hot-toast';
 
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
@@ -10,13 +10,13 @@ interface IFormContact {
 }
 
 function FormContact({ lang }: IFormContact) {
+    toast.success("Сообшения успешно отправлено")
 
     const form = useRef<HTMLFormElement | null>(null);
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-
         if (form.current) {
-            emailjs.sendForm('service_e3gtz8d', 'template_nic07af', form.current, 'io7MteAYkaUykjhIB')
+            emailjs.sendForm('service_f22grcu', 'template_5dyws3l', form.current, 'io7MteAYkaUykjhIB')
                 .then((result) => {
                     toast.success("Сообшения успешно отправлено")
                     console.log(result.text);
@@ -31,7 +31,7 @@ function FormContact({ lang }: IFormContact) {
     };
 
     console.log(form);
-    
+
     return (
         <div className='relative z-10'>
             <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 md:gap-3 lg:gap-6">
