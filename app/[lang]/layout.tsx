@@ -5,6 +5,7 @@ import { Locale, i18n } from '@/i18n.config'
 import Header from './components/header'
 
 import { Inter } from 'next/font/google'
+import { Toaster } from 'react-hot-toast'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -25,9 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang}>
-      
+
       <body className={inter.className}>
         <Header lang={params.lang} />
+        <Toaster
+          position="top-center"
+        />
         <main>{children}</main>
       </body>
     </html>
