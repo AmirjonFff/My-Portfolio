@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { IAchievementsSection } from "./IComponents";
+import heroImg from '../../../public/hero.png'
 import Image from "next/image";
 
 const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
@@ -65,7 +66,7 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                 >
                     <div className="rounded-full bg-[#100e2b]  w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] 2xl:w-[430px] 2xl:h-[430px] relative">
                         <Image
-                            src="/hero.png"
+                            src={heroImg}
                             alt="hero image"
                             className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-[80%]"
                             width={800} // Укажи реальные размеры изображения по ширине

@@ -30,6 +30,8 @@ function FormContact({ lang }: IFormContact) {
 
     };
 
+    console.log(form);
+    
     return (
         <div className='relative z-10'>
             <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 md:gap-3 lg:gap-6">
