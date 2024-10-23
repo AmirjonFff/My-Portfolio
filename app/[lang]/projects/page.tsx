@@ -35,15 +35,6 @@ async function page({ params: { lang } }: {
             previewUrl: "https://af-online-store.vercel.app/",
         },
         {
-            id: 8,
-            title: project.pj8.title,
-            description: project.pj8.desc,
-            image: towers_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/82-TOWERS_mySecondTsProject",
-            previewUrl: "https://82towers.tj/",
-        },
-        {
             id: 7,
             title: project.pj7.title,
             description: project.pj7.desc,
@@ -83,7 +74,7 @@ async function page({ params: { lang } }: {
 
     return (
         <div className='bg-[#17153B] h-screen'>
-            <section className="container xl:px-16 2xl:px-28 flex flex-col h-screen mx-auto pt-20">
+            <section className="container flex flex-col h-screen pt-20 mx-auto xl:px-16 2xl:px-28">
                 <h2 className="border-[#87CEEB] outline-1 border-b w-auto sticky text-center text-2xl md:text-4xl font-bold mb-[0.5px] pb-2 md:pb-3 text-white md:mt-4">
                     {project.title}
                     {/* <ChevronDownIcon strokeWidth={2} className="project_icon" /> */}
