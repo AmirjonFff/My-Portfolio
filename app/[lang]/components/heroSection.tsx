@@ -69,9 +69,9 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                             src={heroImg}
                             alt="hero image"
                             className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-[80%]"
-                            width={800} // Укажи реальные размеры изображения по ширине
-                            height={600} // Укажи реальные размеры изображения по высоте
-                            priority={true} // Приоритетное изображение для загрузки
+                            width={800}
+                            height={600}
+                            priority={true}
                         />
                     </div>
                 </motion.div>
