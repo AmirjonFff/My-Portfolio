@@ -48,7 +48,7 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                             {heroSection.btn1}
                         </Link>
                         <a
-                            href={"https://drive.google.com/file/d/1SYMaD4455RdRyEQRncXEZu5HVzVh3uqM/view?usp=sharing"}
+                            href={"https://drive.google.com/file/d/1vzD7khPsDLLUxFt9e-i6EBS17-IDn3jm/view?usp=sharing"}
                             target="_blank"
                             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#00FFFF] to-[#87CEEB] hover:bg-slate-800 text-white mt-3"
                         >
@@ -69,9 +69,9 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                             src={heroImg}
                             alt="hero image"
                             className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-[80%]"
-                            width={800} // Укажи реальные размеры изображения по ширине
-                            height={600} // Укажи реальные размеры изображения по высоте
-                            priority={true} // Приоритетное изображение для загрузки
+                            width={800}
+                            height={600}
+                            priority={true}
                         />
                     </div>
                 </motion.div>
