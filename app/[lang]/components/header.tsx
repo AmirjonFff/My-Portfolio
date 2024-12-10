@@ -18,10 +18,10 @@ export default async function Header({ lang }: { lang: Locale }) {
           href={`/${lang}`}
           className="text-2xl font-semibold flex items-end lg:scale-[1.3]"
         >
-          <Image className="w-[45px] translate-y-[3px]" src={logo} alt="logo" />
+          <Image priority={true} className="w-[45px] translate-y-[3px]" src={logo} alt="logo" />
         </Link>
         <Nav lang={navigation} params={lang} />
-        <div className='hidden md:block px-0'><MenuCustomList /></div>
+        <div className='hidden px-0 md:block'><MenuCustomList /></div>
         <NavTel lang={navigation} params={lang} />
       </div>
     </header>
