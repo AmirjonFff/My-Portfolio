@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang}>
-
+      <meta name="yandex-verification" content="48ac92edc5db076f" />
       <body className={inter.className}>
         <Header lang={params.lang} />
         <Toaster
