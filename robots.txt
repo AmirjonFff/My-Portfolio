@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://amir-my-portfolio.vercel.app/sitemap.xml
