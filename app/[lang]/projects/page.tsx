@@ -23,7 +23,7 @@ async function page({ params: { lang } }: {
             image: vesto_img,
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
-            previewUrl: "https://af-vesto.vercel.app/",
+            previewUrl: "https://mindstech.io/",
         },
         {
             id: 4,
