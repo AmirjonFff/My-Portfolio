@@ -24,7 +24,7 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://mindstech.io/",
-        },
+        },   
         {
             id: 4,
             title: project.pj4.title,
