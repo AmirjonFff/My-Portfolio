@@ -33,7 +33,7 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/Online-Store",
             previewUrl: "https://af-online-store.vercel.app/",
-        },        
+        },
         {
             id: 1,
             title: project.pj1.title,
