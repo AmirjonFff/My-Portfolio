@@ -17,7 +17,7 @@ async function page({ params: { lang } }: {
 
     const projectsData = [
         {
-            id: 5,
+            id: 7,
             title: project.pj5.title,
             description: project.pj5.desc,
             image: vesto_img,
@@ -33,6 +33,15 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/Online-Store",
             previewUrl: "https://af-online-store.vercel.app/",
+        },        
+        {
+            id: 1,
+            title: project.pj1.title,
+            description: project.pj1.desc,
+            image: admin_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff/AvestoJobsFrontAdmin",
+            previewUrl: "https://avesto-jobs-front-admin.vercel.app/",
         },
         {
             id: 7,
@@ -44,15 +53,6 @@ async function page({ params: { lang } }: {
             previewUrl: "https://af-calculator.vercel.app/",
         },
         {
-            id: 1,
-            title: project.pj1.title,
-            description: project.pj1.desc,
-            image: admin_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/AvestoJobsFrontAdmin",
-            previewUrl: "https://avesto-jobs-front-admin.vercel.app/",
-        },
-        {
             id: 6,
             title: project.pj6.title,
             description: project.pj6.desc,
@@ -60,7 +60,16 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://af-height-todos.vercel.app/",
-        },      
+        }, 
+        {
+            id: 5,
+            title: project.pj8.title,
+            description: project.pj8.desc,
+            image: towers_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff",
+            previewUrl: "https://af-82-towers.vercel.app/",
+        },     
         {
             id: 2,
             title: project.pj2.title,
