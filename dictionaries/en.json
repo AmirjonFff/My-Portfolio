@@ -69,8 +69,8 @@
       "desc": "The project is a web application built with React and JavaScript. It includes all the essential functions of a calculator, providing a convenient and user-friendly experience"
     },
     "pj8": {
-      "title": "82-Towers",
-      "desc": "The project is the official website for the 82-Towers construction project. This application was developed by a team, and I was responsible for creating the layout of the main page. The application is built using Next.js and TypeScript, ensuring modern development practices and high performance."
+      "title": "82-Towers Clone",
+      "desc": "The project is the official website for the 82-Towers construction project, created during a probation period. This application was developed by a team. The application is built using Next.js and TypeScript, ensuring modern development practices and high performance."
     }
   },
   "contact": {
