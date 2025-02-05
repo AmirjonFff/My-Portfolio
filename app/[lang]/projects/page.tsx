@@ -8,6 +8,7 @@ import vesto_img from '../../../public/images/projects/vesto_img.png';
 import todo_img from '../../../public/images/projects/todo_img.png';
 import calculator_Img from '../../../public/images/projects/calculator_Img.png';
 import towers_img from '../../../public/images/projects/82towers_img.png';
+import agstructura_img from '../../../public/images/projects/agstructura_img.png';
 
 async function page({ params: { lang } }: {
     params: { lang: Locale }
@@ -16,6 +17,15 @@ async function page({ params: { lang } }: {
     const { project } = await getDictionary(lang);
 
     const projectsData = [
+        {
+            id: 9,
+            title: project.pj5.title,
+            description: project.pj5.desc,
+            image: agstructura_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff",
+            previewUrl: "https://mindstech.io/",
+        },   
         {
             id: 7,
             title: project.pj5.title,
@@ -44,7 +54,7 @@ async function page({ params: { lang } }: {
             previewUrl: "https://avesto-jobs-front-admin.vercel.app/",
         },
         {
-            id: 7,
+            id: 8,
             title: project.pj7.title,
             description: project.pj7.desc,
             image: calculator_Img,
