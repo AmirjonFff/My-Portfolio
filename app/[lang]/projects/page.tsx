@@ -19,8 +19,8 @@ async function page({ params: { lang } }: {
     const projectsData = [
         {
             id: 9,
-            title: project.pj5.title,
-            description: project.pj5.desc,
+            title: project.pj9.title,
+            description: project.pj9.desc,
             image: agstructura_img,
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",

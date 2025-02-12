@@ -71,6 +71,10 @@
     "pj8": {
       "title": "82-Towers Clone",
       "desc": "The project is the official website for the 82-Towers construction project, created during a probation period. This application was developed by a team. The application is built using Next.js and TypeScript, ensuring modern development practices and high performance."
+    },
+    "pj9": {
+      "title": "Web-structure Company",
+      "desc": "This is a fully functional web application for the company's internal structure, providing quick access to documents and departments. The project is built using React (TypeScript) with Material UI for styling. The backend is developed with Express.js and MongoDB. Main Features:✅ Search – Convenient search across all company departments and documents.✅ Two-language support – Ability to switch between languages.✅ Logging system and access levels – Data security through authorization and user access control."
     }
   },
   "contact": {
