@@ -11,6 +11,7 @@ interface IProjectTab {
         tag: string[],
         gitUrl: string,
         previewUrl: string,
+        technologies: string[]
     }[],
 }
 
