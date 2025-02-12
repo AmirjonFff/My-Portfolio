@@ -1,4 +1,12 @@
-import { ArrowDownIcon, ArrowUpIcon, CodeBracketIcon, EyeIcon, GiftTopIcon } from "@heroicons/react/24/outline";
+import {
+    ArrowDownIcon,
+    ArrowUpIcon,
+    CodeBracketIcon,
+    EyeIcon,
+    CubeTransparentIcon,
+    LanguageIcon,
+    ShieldCheckIcon
+} from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -8,19 +16,20 @@ interface IProjectCard {
     title: string;
     description: string;
     gitUrl: string;
-    previewUrl: string
+    previewUrl: string;
+    technologies: string[];
 }
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }: IProjectCard) => {
-    const [ismore, setMore] = useState(false)
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technologies }: IProjectCard) => {
+    const [isMore, setMore] = useState(false);
 
-    const handleMore = () => setMore(!ismore)
+    const handleMore = () => setMore(!isMore);
+
     return (
-        <div className="bg-[#100e2b] relative p-2 rounded-md pb-7">
-            <div
-                className="relative h-52 md:h-72 rounded-t-xl group"
-            >
-                <Image src={imgUrl} className="w-full h-[100%] object-contain" alt=""></Image>
+        <div className="bg-[#100e2b] relative p-2 rounded-lg pb-8 shadow-md border border-[#1d1b3f]">
+            {/* Image Section */}
+            <div className="relative overflow-hidden rounded-lg h-52 md:h-72 group">
+                <Image src={imgUrl} className="object-contain w-full h-full" alt={title} />
                 <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#0e0c24] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
                     <Link
                         href={gitUrl}
@@ -39,12 +48,61 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }: IProjec
                     </Link>
                 </div>
             </div>
-            <div className="text-white flex flex-col items-start rounded-b-xl mt-2 lg:mt-0 xl:mt-3 bg-[#181818]py-6 px-4">
+
+            {/* Project Info */}
+            <div className="flex flex-col items-start px-4 mt-4 text-white rounded-b-lg">
                 <div className="flex items-center justify-between w-full">
-                    <h5 onClick={handleMore} className="mb-2 font-semibold cursor-pointer md:text-xl lg:text-lg xl:text-xl">{title}</h5>
-                    {ismore ? <ArrowUpIcon onClick={handleMore} className="w-6 sm:w-5 md:w-6 lg:w-5 xl:w-6 text-[#87CEEB] cursor-pointer" /> : <ArrowDownIcon onClick={handleMore} className="w-6 sm:w-5 md:w-6 lg:w-5 xl:w-6 text-[#87CEEB] cursor-pointer" />}
+                    <h5 onClick={handleMore} className="mb-2 font-semibold cursor-pointer md:text-xl lg:text-lg xl:text-xl">
+                        {title}
+                    </h5>
+                    {isMore ? (
+                        <ArrowUpIcon onClick={handleMore} className="w-6 text-[#87CEEB] cursor-pointer" />
+                    ) : (
+                        <ArrowDownIcon onClick={handleMore} className="w-6 text-[#87CEEB] cursor-pointer" />
+                    )}
                 </div>
-                <p className="text-[#ADB7BE] text-sm md:text-base lg:text-sm xl:text-base">{ismore ? description : description.slice(0, 50)}{!ismore && '...'}</p>
+
+                <p className="text-[#ADB7BE] text-sm md:text-base">
+                    {isMore ? description : description.slice(0, 60) + "..."}
+                </p>
+
+                {/* Technologies */}
+                <div className="mt-3">
+                    {isMore && <h6 className="text-[#87CEEB] font-medium">🛠️ Технологический стек:</h6>}
+                    <div className="flex flex-wrap gap-2 mt-1">
+                        {technologies?.map((tech, index) => (
+                            <span key={index} className="bg-[#1d1b3f] px-2 py-1 text-xs rounded-md">{tech}</span>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Features */}
+                {isMore && (
+                    <div className="mt-4">
+                        <h6 className="text-[#87CEEB] font-medium">🚀 Основной функционал:</h6>
+                        <ul className="list-none mt-2 text-sm text-[#ADB7BE] space-y-1">
+                            <li className="flex items-center">
+                                ✅ Удобный поиск по отделам и документам.
+                            </li>
+                            <li className="flex items-center">
+                                ✅ Поддержка двух языков.
+                            </li>
+                            <li className="flex items-center">
+                                ✅ Авторизация и разграничение прав пользователей.
+                            </li>
+                        </ul>
+                    </div>
+                )}
+
+                {/* Experience */}
+                {isMore && (
+                    <div className="mt-4">
+                        <h6 className="text-[#87CEEB] font-medium">🎯 Полученный опыт:</h6>
+                        <p className="text-sm text-[#ADB7BE]">
+                        В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным.
+                        </p>
+                    </div>
+                )}
             </div>
         </div>
     );
