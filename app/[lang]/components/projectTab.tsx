@@ -2,6 +2,7 @@
 import React, { useRef } from 'react'
 import { useInView, motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
+
 interface IProjectTab {
     data: {
         id: number,
@@ -11,7 +12,8 @@ interface IProjectTab {
         tag: string[],
         gitUrl: string,
         previewUrl: string,
-        technologies: string[]
+        technologies: string[],
+        funcs: { [key: string]: string }
     }[],
 }
 
@@ -28,21 +30,13 @@ function ProjectTab({ data }: IProjectTab) {
         <ul ref={ref} className="grid gap-4 py-5 overflow-auto block_project sm:grid-cols-2 lg:grid-cols-3 md:px-3 md:gap-7 lg:gap-6 xl:gap-8 2xl:gap-12">
             {data.map((project, index) => (
                 <motion.li
-                    key={index}
+                    key={project.id}
                     variants={cardVariants}
                     initial="initial"
                     animate={isInView ? "animate" : "initial"}
                     transition={{ duration: 0.3, delay: index * 0.4 }}
                 >
-                    <ProjectCard
-                        key={project.id}
-                        title={project.title}
-                        description={project.description}
-                        imgUrl={project.image}
-                        gitUrl={project.gitUrl}
-                        previewUrl={project.previewUrl}
-                        technologies={project.technologies}
-                    />
+                    <ProjectCard  {...project} />
                 </motion.li>
             ))}
         </ul>

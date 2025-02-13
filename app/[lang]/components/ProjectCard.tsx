@@ -12,24 +12,26 @@ import Link from "next/link";
 import { useState } from "react";
 
 interface IProjectCard {
-    imgUrl: string;
+    image: string;
     title: string;
     description: string;
     gitUrl: string;
     previewUrl: string;
     technologies: string[];
+    funcs: { [key: string]: string }
 }
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technologies }: IProjectCard) => {
+const ProjectCard = ({ image, title, description, gitUrl, previewUrl, technologies, funcs }: IProjectCard) => {
     const [isMore, setMore] = useState(false);
+    console.log(funcs)
 
     const handleMore = () => setMore(!isMore);
+    const funcsMap = Object.values(funcs ?? {});
 
     return (
         <div className="bg-[#100e2b] relative p-2 rounded-lg pb-8 shadow-md border border-[#1d1b3f]">
-            {/* Image Section */}
             <div className="relative overflow-hidden rounded-lg h-52 md:h-72 group">
-                <Image src={imgUrl} className="object-contain w-full h-full" alt={title} />
+                <Image src={image} className="object-contain w-full h-full" alt={title} />
                 <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#0e0c24] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
                     <Link
                         href={gitUrl}
@@ -63,7 +65,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technolog
                 </div>
 
                 <p className="text-[#ADB7BE] text-sm md:text-base">
-                    {isMore ? description : description.slice(0, 60) + "..."}
+                    {isMore ? description : description.slice(0, 35) + "..."}
                 </p>
 
                 {/* Technologies */}
@@ -81,15 +83,11 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technolog
                     <div className="mt-4">
                         <h6 className="text-[#87CEEB] font-medium">🚀 Основной функционал:</h6>
                         <ul className="list-none mt-2 text-sm text-[#ADB7BE] space-y-1">
-                            <li className="flex items-center">
-                                ✅ Удобный поиск по отделам и документам.
-                            </li>
-                            <li className="flex items-center">
-                                ✅ Поддержка двух языков.
-                            </li>
-                            <li className="flex items-center">
-                                ✅ Авторизация и разграничение прав пользователей.
-                            </li>
+                            {funcsMap.map((func) =>
+                                <li className="flex items-center">
+                                    ✅ {func}
+                                </li>
+                            )}
                         </ul>
                     </div>
                 )}
@@ -99,7 +97,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technolog
                     <div className="mt-4">
                         <h6 className="text-[#87CEEB] font-medium">🎯 Полученный опыт:</h6>
                         <p className="text-sm text-[#ADB7BE]">
-                        В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным.
+                            В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным.
                         </p>
                     </div>
                 )}

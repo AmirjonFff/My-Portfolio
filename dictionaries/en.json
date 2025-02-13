@@ -46,35 +46,83 @@
     "more": "Read more",
     "pj1": {
       "title": "Admin panel",
-      "desc": "A web application for managing a job vacancy website, built with React and TypeScript, includes login and authorization features. This ensures secure and convenient management of vacancies and users through an administrative panel."
+      "desc": "A web application for managing a job vacancy website, built with React and TypeScript, includes login and authorization features. This ensures secure and convenient management of vacancies and users through an administrative panel.",
+      "funcs": {
+        "func1": "Удобный поиск по отделам и документам.",
+        "func2": "Поддержка двух языков.",
+        "func3": "Авторизация и разграничение прав пользователей."
+      },
+      "opt": "В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным."
     },
     "pj2": {
       "title": "Chat",
-      "desc": "This website is built exclusively with Nest and TypeScript. It is my full-stack application. The project features Socket.io for real-time communication, ensuring instant updates and smooth user interactions."
+      "desc": "This website is built exclusively with Nest and TypeScript. It is my full-stack application. The project features Socket.io for real-time communication, ensuring instant updates and smooth user interactions.",
+      "funcs": {
+        "func1": "Удобный поиск по отделам и документам.",
+        "func2": "Поддержка двух языков.",
+        "func3": "Авторизация и разграничение прав пользователей."
+      },
+      "opt": "В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным."
     },
     "pj4": {
       "title": "Online Store",
-      "desc": "The project is an online store built with React and TypeScript. It features a shopping cart connected to local storage, allowing users to retain items even after refreshing the page. Additionally, it includes various filters for convenient product search and sorting."
+      "desc": "The project is an online store built with React and TypeScript. It features a shopping cart connected to local storage, allowing users to retain items even after refreshing the page. Additionally, it includes various filters for convenient product search and sorting.",
+      "funcs": {
+        "func1": "Удобный поиск по отделам и документам.",
+        "func2": "Поддержка двух языков.",
+        "func3": "Авторизация и разграничение прав пользователей."
+      },
+      "opt": "В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным."
     },
     "pj5": {
       "title": "MINDS",
-      "desc": "This is the official website of the Vesto-Education educational center, built using React and TypeScript. It is integrated with a Learning Management System (LMS), providing a seamless experience for managing courses and educational content."
+      "desc": "This is the official website of the Vesto-Education educational center, built using React and TypeScript. It is integrated with a Learning Management System (LMS), providing a seamless experience for managing courses and educational content.",
+      "funcs": {
+        "func1": "Удобный поиск по отделам и документам.",
+        "func2": "Поддержка двух языков.",
+        "func3": "Авторизация и разграничение прав пользователей."
+      },
+      "opt": "В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным."
     },
     "pj6": {
       "title": "TO-DO List",
-      "desc": "This is my full—fledged application. The frontend is designed using React and TypeScript, and the backend is based on Express.js. The application includes login and authorization features, ensuring secure access for task management."
+      "desc": "This is my full—fledged application. The frontend is designed using React and TypeScript, and the backend is based on Express.js. The application includes login and authorization features, ensuring secure access for task management.",
+      "funcs": {
+        "func1": "Удобный поиск по отделам и документам.",
+        "func2": "Поддержка двух языков.",
+        "func3": "Авторизация и разграничение прав пользователей."
+      },
+      "opt": "В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным."
     },
     "pj7": {
       "title": "Calculator",
-      "desc": "The project is a web application built with React and JavaScript. It includes all the essential functions of a calculator, providing a convenient and user-friendly experience"
+      "desc": "The project is a web application built with React and JavaScript. It includes all the essential functions of a calculator, providing a convenient and user-friendly experience",
+      "funcs": {
+        "func1": "Удобный поиск по отделам и документам.",
+        "func2": "Поддержка двух языков.",
+        "func3": "Авторизация и разграничение прав пользователей."
+      },
+      "opt": "В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным."
     },
     "pj8": {
       "title": "82-Towers Clone",
-      "desc": "The project is the official website for the 82-Towers construction project, created during a probation period. This application was developed by a team. The application is built using Next.js and TypeScript, ensuring modern development practices and high performance."
+      "desc": "The project is the official website for the 82-Towers construction project, created during a probation period. This application was developed by a team. The application is built using Next.js and TypeScript, ensuring modern development practices and high performance.",
+      "funcs": {
+        "func1": "Удобный поиск по отделам и документам.",
+        "func2": "Поддержка двух языков.",
+        "func3": "Авторизация и разграничение прав пользователей."
+      },
+      "opt": "В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным."
     },
     "pj9": {
       "title": "Web-structure Company",
-      "desc": "This is a fully functional web application for the company's internal structure, providing quick access to documents and departments. The project is built using React (TypeScript) with Material UI for styling. The backend is developed with Express.js and MongoDB. Main Features:✅ Search – Convenient search across all company departments and documents.✅ Two-language support – Ability to switch between languages.✅ Logging system and access levels – Data security through authorization and user access control."
+      "desc": "This is a fully functional web application for the company's internal structure, providing quick access to documents and departments. The project is built using React (TypeScript) with Material UI for styling. The backend is developed with Express.js and MongoDB. Main Features:✅ Search – Convenient search across all company departments and documents.✅ Two-language support – Ability to switch between languages.✅ Logging system and access levels – Data security through authorization and user access control.",
+      "funcs": {
+        "func1": "Удобный поиск по отделам и документам.",
+        "func2": "Поддержка двух языков.",
+        "func3": "Авторизация и разграничение прав пользователей."
+      },
+      "opt": "В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным."
     }
   },
   "contact": {
