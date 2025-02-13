@@ -29,12 +29,14 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                                 `${heroSection.job1}`,
                                 1000,
                                 `${heroSection.job2}`,
+                                1000,
+                                `${heroSection.job3}`,
                                 1000
                             ]}
                             wrapper="span"
                             speed={20}
                             repeat={Infinity}
-                            className="text-[25px] md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+                            className="text-[25px] md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl"
                         />
                     </h1>
                     <p className="text-[#ADB7BE] sm:w-[80%] text-sm mb-6 xl:text-xl">
