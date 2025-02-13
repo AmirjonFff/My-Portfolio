@@ -25,7 +25,8 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://mindstech.io/",
-            technologies: ['React', 'TypeScript', 'Fetch', 'Redux', 'Material-UI', 'JWT', 'Express', 'MongoDB']
+            technologies: ['React', 'TypeScript', 'Fetch', 'Redux', 'Material-UI', 'JWT', 'Express', 'MongoDB']           ,
+            funcs: project.pj9.funcs,            
         },
         {
             id: 7,
@@ -35,7 +36,18 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://mindstech.io/",
-            technologies: ['React', 'TypeScript', 'RTK Query', 'Dnd-kit', 'Mantine', 'Tailwind', 'JWT', 'Express', 'Multer', 'Nodemailer', 'MongoDB']
+            technologies: ['React', 'TypeScript', 'RTK Query', 'Dnd-kit', 'Mantine', 'Tailwind', 'JWT', 'Express', 'Multer', 'Nodemailer', 'MongoDB'],
+            funcs: project.pj5.funcs,        },
+        {
+            id: 1,
+            title: project.pj1.title,
+            description: project.pj1.desc,
+            image: admin_img,
+            tag: ["All", "Web"],
+            gitUrl: "https://github.com/AmirjonFff/AvestoJobsFrontAdmin",
+            previewUrl: "https://avesto-jobs-front-admin.vercel.app/",
+            technologies: ['React', 'TypeScript', 'RTK Query', 'Export-table-to-excel', 'Yup', 'Draggable', 'Material-UI', 'Tailwind', 'JWT'],
+            funcs: project.pj1.funcs,
         },
         {
             id: 4,
@@ -46,18 +58,7 @@ async function page({ params: { lang } }: {
             gitUrl: "https://github.com/AmirjonFff/Online-Store",
             previewUrl: "https://af-online-store.vercel.app/",
             technologies: ['React', 'TypeScript', 'RTK Query', 'Mantine', 'Tailwind'],
-        },
-        {
-            id: 1,
-            title: project.pj1.title,
-            description: project.pj1.desc,
-            image: admin_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/AvestoJobsFrontAdmin",
-            previewUrl: "https://avesto-jobs-front-admin.vercel.app/",
-            technologies: ['React', 'TypeScript', 'RTK Query', 'Export-table-to-excel', 'Yup', 'Draggable', 'Material-UI', 'Tailwind', 'JWT']
-
-        },
+            funcs: project.pj4.funcs,        },
         {
             id: 8,
             title: project.pj7.title,
@@ -66,8 +67,8 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/calculator",
             previewUrl: "https://af-calculator.vercel.app/",
-            technologies: ['React', 'JavaScript']
-        },
+            technologies: ['React', 'JavaScript'],
+            funcs: project.pj7.funcs,        },
         {
             id: 6,
             title: project.pj6.title,
@@ -76,8 +77,8 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://af-height-todos.vercel.app/",
-            technologies: ['React', 'TypeScript', 'Material-tailwind', 'JWT', 'Express', 'MongoDB']
-        },
+            technologies: ['React', 'TypeScript', 'Material-tailwind', 'JWT', 'Express', 'MongoDB'],
+            funcs: project.pj6.funcs,        },
         {
             id: 5,
             title: project.pj8.title,
@@ -86,8 +87,8 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://af-82-towers.vercel.app/",
-            technologies: ['React', 'TypeScript', 'Tailwind']
-        },
+            technologies: ['React', 'TypeScript', 'Tailwind'],
+            funcs: project.pj8.funcs,        },
         {
             id: 2,
             title: project.pj2.title,
@@ -96,8 +97,8 @@ async function page({ params: { lang } }: {
             tag: ["All", "Web"],
             gitUrl: "https://github.com/AmirjonFff/chat-socket.io/tree/main",
             previewUrl: "https://amir-chat.onrender.com/chat",
-            technologies: ['Nest', 'TypeScript', 'Socket.io', 'Prisma']
-        },
+            technologies: ['Nest', 'TypeScript', 'Socket.io', 'Prisma'],
+            funcs: project.pj2.funcs,        },
     ];
 
     return (
