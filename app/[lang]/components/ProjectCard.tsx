@@ -18,20 +18,20 @@ interface IProjectCard {
     gitUrl: string;
     previewUrl: string;
     technologies: string[];
-    funcs: { [key: string]: string }
+    funcs: { [key: string]: string },
+    opt: string
 }
 
-const ProjectCard = ({ image, title, description, gitUrl, previewUrl, technologies, funcs }: IProjectCard) => {
+const ProjectCard = ({ image, title, description, gitUrl, previewUrl, technologies, funcs, opt }: IProjectCard) => {
     const [isMore, setMore] = useState(false);
-    console.log(funcs)
 
     const handleMore = () => setMore(!isMore);
     const funcsMap = Object.values(funcs ?? {});
 
     return (
-        <div className="bg-[#100e2b] relative p-2 rounded-lg pb-8 shadow-md border border-[#1d1b3f]">
-            <div className="relative overflow-hidden rounded-lg h-52 md:h-72 group">
-                <Image src={image} className="object-contain w-full h-full" alt={title} />
+        <div className="bg-[#100e2b] relative rounded-lg pb-5 shadow-md border overflow-hidden border-[#1d1b3f]">
+            <div className="relative h-48 overflow-hidden group">
+                <Image src={image} className="object-cover w-full h-full" alt={title} />
                 <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#0e0c24] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
                     <Link
                         href={gitUrl}
@@ -51,21 +51,20 @@ const ProjectCard = ({ image, title, description, gitUrl, previewUrl, technologi
                 </div>
             </div>
 
-            {/* Project Info */}
             <div className="flex flex-col items-start px-4 mt-4 text-white rounded-b-lg">
                 <div className="flex items-center justify-between w-full">
                     <h5 onClick={handleMore} className="mb-2 font-semibold cursor-pointer md:text-xl lg:text-lg xl:text-xl">
                         {title}
                     </h5>
                     {isMore ? (
-                        <ArrowUpIcon onClick={handleMore} className="w-6 text-[#87CEEB] cursor-pointer" />
+                        <ArrowUpIcon onClick={handleMore} className="w-[22px] text-[#87CEEB] cursor-pointer" />
                     ) : (
-                        <ArrowDownIcon onClick={handleMore} className="w-6 text-[#87CEEB] cursor-pointer" />
+                        <ArrowDownIcon onClick={handleMore} className="w-[22px] text-[#87CEEB] cursor-pointer" />
                     )}
                 </div>
 
                 <p className="text-[#ADB7BE] text-sm md:text-base">
-                    {isMore ? description : description.slice(0, 35) + "..."}
+                    {isMore ? description : description.slice(0, description.indexOf('.')) + "."}
                 </p>
 
                 {/* Technologies */}
@@ -97,7 +96,7 @@ const ProjectCard = ({ image, title, description, gitUrl, previewUrl, technologi
                     <div className="mt-4">
                         <h6 className="text-[#87CEEB] font-medium">🎯 Полученный опыт:</h6>
                         <p className="text-sm text-[#ADB7BE]">
-                            В этом проекте я понял, как создавать различные роли пользователей и настраивать доступ к данным.
+                            {opt}
                         </p>
                     </div>
                 )}

@@ -31,6 +31,8 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                                 `${heroSection.job2}`,
                                 1000,
                                 `${heroSection.job3}`,
+                                1000,
+                                `${heroSection.job4}`,
                                 1000
                             ]}
                             wrapper="span"
