@@ -19,96 +19,109 @@ async function page({ params: { lang } }: {
     const projectsData = [
         {
             id: 9,
-            title: project.pj9.title,
+            title: 'Web Structure Company',
             description: project.pj9.desc,
             image: agstructura_img,
-            tag: ["All", "Web"],
+            tag: ["All", "Fullstack"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://mindstech.io/",
-            technologies: ['React', 'TypeScript', 'Fetch', 'Redux', 'Material-UI', 'JWT', 'Express', 'MongoDB']           ,
-            funcs: project.pj9.funcs,            
+            technologies: ['React', 'TypeScript', 'Fetch', 'Redux', 'Material-UI', 'JWT', 'Express', 'MongoDB'],
+            funcs: project.pj9.funcs,
+            opt: project.pj9.opt
         },
         {
-            id: 7,
-            title: project.pj5.title,
+            id: 5,
+            title: 'MINDS',
             description: project.pj5.desc,
             image: vesto_img,
-            tag: ["All", "Web"],
+            tag: ["All", "Fullstack"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://mindstech.io/",
-            technologies: ['React', 'TypeScript', 'RTK Query', 'Dnd-kit', 'Mantine', 'Tailwind', 'JWT', 'Express', 'Multer', 'Nodemailer', 'MongoDB'],
-            funcs: project.pj5.funcs,        },
+            technologies: ['React', 'TypeScript', 'RTK Query', 'Mantine', 'Tailwind', 'Docker', 'JWT', 'Express', 'Nodemailer', 'MongoDB'],
+            funcs: project.pj5.funcs,
+            opt: project.pj5.opt
+        },
         {
             id: 1,
-            title: project.pj1.title,
+            title: 'Admin Panel',
             description: project.pj1.desc,
             image: admin_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/AvestoJobsFrontAdmin",
+            tag: ["All", "Frontend"],
+            gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://avesto-jobs-front-admin.vercel.app/",
-            technologies: ['React', 'TypeScript', 'RTK Query', 'Export-table-to-excel', 'Yup', 'Draggable', 'Material-UI', 'Tailwind', 'JWT'],
+            technologies: ['React', 'TypeScript', 'RTK Query', 'Yup', 'Draggable', 'Material-UI', 'Tailwind', 'JWT'],
             funcs: project.pj1.funcs,
+            opt: project.pj1.opt
         },
         {
             id: 4,
-            title: project.pj4.title,
+            title: 'Online Store',
             description: project.pj4.desc,
             image: store_img,
-            tag: ["All", "Web"],
+            tag: ["All", "Frontend"],
             gitUrl: "https://github.com/AmirjonFff/Online-Store",
             previewUrl: "https://af-online-store.vercel.app/",
             technologies: ['React', 'TypeScript', 'RTK Query', 'Mantine', 'Tailwind'],
-            funcs: project.pj4.funcs,        },
+            funcs: project.pj4.funcs,
+            opt: project.pj4.opt
+        },
         {
             id: 8,
-            title: project.pj7.title,
-            description: project.pj7.desc,
-            image: calculator_Img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff/calculator",
-            previewUrl: "https://af-calculator.vercel.app/",
-            technologies: ['React', 'JavaScript'],
-            funcs: project.pj7.funcs,        },
-        {
-            id: 6,
-            title: project.pj6.title,
-            description: project.pj6.desc,
-            image: todo_img,
-            tag: ["All", "Web"],
-            gitUrl: "https://github.com/AmirjonFff",
-            previewUrl: "https://af-height-todos.vercel.app/",
-            technologies: ['React', 'TypeScript', 'Material-tailwind', 'JWT', 'Express', 'MongoDB'],
-            funcs: project.pj6.funcs,        },
-        {
-            id: 5,
-            title: project.pj8.title,
+            title: '82-Towers Clone',
             description: project.pj8.desc,
             image: towers_img,
-            tag: ["All", "Web"],
+            tag: ["All", "Frontend"],
             gitUrl: "https://github.com/AmirjonFff",
             previewUrl: "https://af-82-towers.vercel.app/",
             technologies: ['React', 'TypeScript', 'Tailwind'],
-            funcs: project.pj8.funcs,        },
+            funcs: project.pj8.funcs,
+            opt: project.pj8.opt
+        },
+        {
+            id: 7,
+            title: 'Calculator',
+            description: project.pj7.desc,
+            image: calculator_Img,
+            tag: ["All", "Frontend"],
+            gitUrl: "https://github.com/AmirjonFff/calculator",
+            previewUrl: "https://af-calculator.vercel.app/",
+            technologies: ['React', 'JavaScript'],
+            funcs: project.pj7.funcs,
+            opt: project.pj7.opt
+        },
+        {
+            id: 6,
+            title: 'TO DO List',
+            description: project.pj6.desc,
+            image: todo_img,
+            tag: ["All", "Fullstack"],
+            gitUrl: "https://github.com/AmirjonFff",
+            previewUrl: "https://af-height-todos.vercel.app/",
+            technologies: ['React', 'TypeScript', 'Material-tailwind', 'JWT', 'Express', 'MongoDB'],
+            funcs: project.pj6.funcs,
+            opt: project.pj6.opt
+        },
         {
             id: 2,
-            title: project.pj2.title,
+            title: 'Chat',
             description: project.pj2.desc,
             image: chat_img,
-            tag: ["All", "Web"],
+            tag: ["All", "Frontend"],
             gitUrl: "https://github.com/AmirjonFff/chat-socket.io/tree/main",
             previewUrl: "https://amir-chat.onrender.com/chat",
             technologies: ['Nest', 'TypeScript', 'Socket.io', 'Prisma'],
-            funcs: project.pj2.funcs,        },
+            funcs: project.pj2.funcs,
+            opt: project.pj2.opt
+        },
     ];
 
     return (
         <div className='bg-[#17153B] h-screen'>
             <section className="container flex flex-col h-screen pt-20 mx-auto xl:px-16 2xl:px-28">
-                <h2 className="border-[#87CEEB] outline-1 border-b w-auto sticky text-center text-2xl md:text-4xl font-bold mb-[0.5px] pb-2 md:pb-3 text-white md:mt-4">
+                <h2 className="outline-1 w-auto sticky text-center text-2xl md:text-4xl font-bold mb-[0.5px] text-white md:mt-4">
                     {project.title}
-                    {/* <ChevronDownIcon strokeWidth={2} className="project_icon" /> */}
                 </h2>
-                <ProjectTab data={projectsData} />
+                <ProjectTab data={projectsData} lang={project.tab} />
             </section>
         </div>
     )
