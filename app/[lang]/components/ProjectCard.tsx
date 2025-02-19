@@ -82,8 +82,8 @@ const ProjectCard = ({ image, title, description, gitUrl, previewUrl, technologi
                     <div className="mt-4">
                         <h6 className="text-[#87CEEB] font-medium">🚀 Основной функционал:</h6>
                         <ul className="list-none mt-2 text-sm text-[#ADB7BE] space-y-1">
-                            {funcsMap.map((func) =>
-                                <li className="flex items-center">
+                            {funcsMap.map((func, i) =>
+                                <li key={i} className="flex items-center">
                                     ✅ {func}
                                 </li>
                             )}
