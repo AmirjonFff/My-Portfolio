@@ -1,16 +1,15 @@
 import { CodeBracketIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
-// squares -all
 
-const ProjectTag = ({ name, onClick, isSelected, icon: Icon }) => {
+const ProjectTag = ({ name, onClick, isSelected, tag, icon: Icon }) => {
   const buttonStyles = isSelected
     ? "text-[#87CEEB] !border-[#87CEEB]"
     : "text-[#ADB7BE] border-slate-600 hover:border-white";
   return (
     <button
       className={`${buttonStyles} border-b-2 flex gap-1 border-transparent px-6 py-1 text-lg cursor-pointer relative z-30 -mb-[1px]`}
-      onClick={() => onClick(name)}
+      onClick={() => onClick(tag)}
     >
       <Icon width={20} />
       {name}

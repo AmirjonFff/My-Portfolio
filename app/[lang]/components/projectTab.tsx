@@ -47,24 +47,28 @@ function ProjectTab({ data, lang }: IProjectTab) {
                     icon={GlobeAltIcon}
                     onClick={handleTagChange}
                     name={lang.all}
+                    tag={'All'}
                     isSelected={tag === "All"}
                 />
                 <ProjectTag
                     icon={CodeBracketIcon}
                     onClick={handleTagChange}
                     name={lang.front}
+                    tag={'Frontend'}
                     isSelected={tag === "Frontend"}
                 />
                 <ProjectTag
                     icon={ServerStackIcon}
                     onClick={handleTagChange}
                     name={lang.full}
+                    tag={'Fullstack'}
                     isSelected={tag === "Fullstack"}
                 />
                 <ProjectTag
                     icon={CogIcon}
                     onClick={handleTagChange}
                     name={lang.bit}
+                    tag={'Bitrix24'}
                     isSelected={tag === "Bitrix24"}
                 />
             </div>
