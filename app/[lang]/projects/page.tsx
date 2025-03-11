@@ -8,7 +8,7 @@ import vesto_img from '../../../public/images/projects/vesto_img.png';
 import todo_img from '../../../public/images/projects/todo_img.png';
 import calculator_Img from '../../../public/images/projects/calculator_Img.png';
 import towers_img from '../../../public/images/projects/82towers_img.png';
-import agstructura_img from '../../../public/images/projects/agstructura_img.png';
+import agstructura_img from '../../../public/images/projects/agstructura_img.jpg';
 
 async function page({ params: { lang } }: {
     params: { lang: Locale }
