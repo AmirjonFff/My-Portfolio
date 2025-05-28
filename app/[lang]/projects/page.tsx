@@ -24,7 +24,7 @@ async function page({ params: { lang } }: {
             image: agstructura_img,
             tag: ["All", "Fullstack"],
             gitUrl: "https://github.com/AmirjonFff",
-            previewUrl: "https://mindstech.io/",
+            previewUrl: "",
             technologies: ['React', 'TypeScript', 'Fetch', 'Redux', 'Material-UI', 'JWT', 'Express', 'MongoDB'],
             funcs: project.pj9.funcs,
             opt: project.pj9.opt
