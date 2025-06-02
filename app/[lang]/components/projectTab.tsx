@@ -64,13 +64,6 @@ function ProjectTab({ data, lang }: IProjectTab) {
                     tag={'Fullstack'}
                     isSelected={tag === "Fullstack"}
                 />
-                <ProjectTag
-                    icon={CogIcon}
-                    onClick={handleTagChange}
-                    name={lang.bit}
-                    tag={'Bitrix24'}
-                    isSelected={tag === "Bitrix24"}
-                />
             </div>
             <ul ref={ref} className="grid gap-4 py-5 overflow-auto block_project sm:grid-cols-2 lg:grid-cols-3 md:px-3 md:gap-7 lg:gap-6 xl:gap-8 2xl:gap-11">
 
