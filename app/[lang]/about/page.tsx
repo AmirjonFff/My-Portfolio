@@ -1,5 +1,4 @@
 import { getDictionary } from "@/lib/dictionary";
-import MyAbout from "../components/myAbout";
 import { Locale } from "@/i18n.config";
 import about_img from '../../../public/images/about.jpg'
 import Image from "next/image";
@@ -24,11 +23,11 @@ const AboutSection = async ({ params: { lang } }: {
       id: "skills",
       content: (
         <ul className="pl-2 list-disc">
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Next</li>
-          <li>PostgreSQL</li>
+          <li>HTML & CSS</li>
+          <li>JavaScript & TypeScript</li>
+          <li>React & Next</li>
+          <li>Express & Nest</li>
+          <li>MongoDB & PostgreSQL</li>
         </ul>
       ),
     },

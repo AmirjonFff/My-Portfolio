@@ -29,7 +29,7 @@ const AchievementsSection = ({ page: { achievementsSection } }: IAchievementsSec
         },
         {
             metric: `${achievementsSection.title4}`,
-            value: "1",
+            value: "2",
             postfix: "+",
         },
     ];
@@ -44,13 +44,13 @@ const AchievementsSection = ({ page: { achievementsSection } }: IAchievementsSec
                             key={index}
                             className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
                         >
-                            <h2 className="text-white text-4xl font-bold flex flex-row">
+                            <h2 className="flex flex-row text-4xl font-bold text-white">
                                 {achievement.prefix}
                                 <AnimatedNumbers
                                     includeComma
                                     animateToNumber={parseInt(achievement.value)}
                                     locale="en-US"
-                                    className="text-white text-4xl font-bold"
+                                    className="text-4xl font-bold text-white"
                                     configs={(_: string, index: number) => {
                                         return {
                                             mass: 1,
