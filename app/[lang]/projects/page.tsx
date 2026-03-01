@@ -25,7 +25,7 @@ async function page({ params: { lang } }: {
             image: lms_img,
             tag: ["All", "Fullstack"],
             gitUrl: "https://github.com/AmirjonFff",
-            previewUrl: "",
+            previewUrl: "https://lms.avesto.tj/",
             technologies: ['React', 'TypeScript', 'JWT', 'Nest.js', 'PostgreSQL', 'Sequelize', 'Swagger'],
             funcs: project.pj10.funcs,
             opt: project.pj10.opt
