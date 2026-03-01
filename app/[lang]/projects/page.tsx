@@ -6,6 +6,7 @@ import chat_img from '../../../public/images/projects/chat_img.png';
 import store_img from '../../../public/images/projects/store.png';
 import vesto_img from '../../../public/images/projects/vesto_img.png';
 import todo_img from '../../../public/images/projects/todo_img.png';
+import lms_img from '../../../public/images/projects/lms_img.png';
 import calculator_Img from '../../../public/images/projects/calculator_Img.png';
 import towers_img from '../../../public/images/projects/82towers_img.png';
 import agstructura_img from '../../../public/images/projects/agstructura_img.jpg';
@@ -17,6 +18,18 @@ async function page({ params: { lang } }: {
     const { project } = await getDictionary(lang);
 
     const projectsData = [
+        {
+            id: 10,
+            title: 'LMS',
+            description: project.pj10.desc,
+            image: lms_img,
+            tag: ["All", "Fullstack"],
+            gitUrl: "https://github.com/AmirjonFff",
+            previewUrl: "",
+            technologies: ['React', 'TypeScript', 'JWT', 'Nest.js', 'PostgreSQL', 'Sequelize', 'Swagger'],
+            funcs: project.pj10.funcs,
+            opt: project.pj10.opt
+        },
         {
             id: 9,
             title: 'Web Structure Company',
