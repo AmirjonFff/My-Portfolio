@@ -47,9 +47,9 @@
     "more": "Read more",
     "tab": {
       "all": "All",
-      "front":"Frontend",
-      "full":"Fullstack",
-      "bit":"Bitrix24"
+      "front": "Frontend",
+      "full": "Fullstack",
+      "bit": "Bitrix24"
     },
     "pj1": {
       "title": "Admin panel",
@@ -130,6 +130,17 @@
         "func3": "Authorization and differentiation of user rights."
       },
       "opt": "In this project, I understood how to create different user roles and customize data access."
+    },
+    "pj10": {
+      "title": "LMS Platform",
+      "desc": "A full-featured Learning Management System (LMS) for managing online education. The platform allows creating courses, managing users, and tracking students' progress in real time.",
+      "funcs": {
+        "func1": "Creation and management of courses, modules, and lessons.",
+        "func2": "Role-based system (administrator, instructor, student) with access control.",
+        "func3": "Tracking learning progress and test results.",
+        "func4": "User authentication and personal dashboards."
+      },
+      "opt": "In this project, I deepened my knowledge of LMS architecture design, implemented a flexible role-based system, and learned how to build a scalable structure for educational platforms."
     }
   },
   "contact": {
