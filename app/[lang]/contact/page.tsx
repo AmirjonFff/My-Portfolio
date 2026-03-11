@@ -13,7 +13,7 @@ import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 async function page({ params: { lang } }: {
     params: { lang: Locale }
 }) {
-    const { contact } = await getDictionary(lang)
+    const { contact }:any = await getDictionary(lang)
     return (
         <div className="flex items-center min-h-screen lg:overflow-hidden">
             <section
