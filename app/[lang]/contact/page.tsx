@@ -23,10 +23,10 @@ async function page({ params: { lang } }: {
                 <div className="hidden bg_gradient md:block -bottom-60 -left-80"></div>
                 <div className="relative z-10 mb-10">
                     <h5 className="my-2 text-3xl font-bold text-white lg:text-4xl">
-                        {contact.title}
+                        {contact?.title}
                     </h5>
                     <p className="text-[#ADB7BE] mt-2 md:mt-5 m max-w-md text-base lg:text-xl">
-                        {contact.desc}
+                        {contact?.desc}
                     </p>
                     <div className="text-[#ADB7BE] text-lg mt-2 flex flex-col lg:flex-row gap-2 lg:gap-10">
                         <div className="">
@@ -51,7 +51,7 @@ async function page({ params: { lang } }: {
                         </Link>
                     </div>
                 </div>
-                <FormContact lang={contact.contactForm} />
+                <FormContact lang={contact?.contactForm} />
             </section>
         </div>
     );
