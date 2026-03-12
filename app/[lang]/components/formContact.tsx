@@ -31,6 +31,7 @@ function FormContact({ lang }: IFormContact) {
 
     console.log(form);
 
+
     return (
         <div className='relative z-10'>
             <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 md:gap-3 lg:gap-6">
@@ -40,7 +41,7 @@ function FormContact({ lang }: IFormContact) {
                         htmlFor="email"
                         className="block mb-2 text-sm font-medium text-white"
                     >
-                        {lang.name}
+                        {lang?.name}
                     </label>
                     <input
                         name="from_name"
@@ -48,7 +49,7 @@ function FormContact({ lang }: IFormContact) {
                         id="text"
                         required
                         className="bg-[#100e2b] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                        placeholder={lang.namePlac}
+                        placeholder={lang?.namePlac}
                     />
                 </div>
                 <div>
@@ -56,7 +57,7 @@ function FormContact({ lang }: IFormContact) {
                         htmlFor="email"
                         className="block mb-2 text-sm font-medium text-white"
                     >
-                        {lang.email}
+                        {lang?.email}
                     </label>
                     <input
                         name="from_email"
@@ -72,7 +73,7 @@ function FormContact({ lang }: IFormContact) {
                         htmlFor="subject"
                         className="block mb-2 text-sm font-medium text-white"
                     >
-                        {lang.subject}
+                        {lang?.subject}
                     </label>
                     <input
                         name="subject"
@@ -80,7 +81,7 @@ function FormContact({ lang }: IFormContact) {
                         id="subject"
                         required
                         className="bg-[#100e2b] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                        placeholder={lang.subjectPlac}
+                        placeholder={lang?.subjectPlac}
                     />
                 </div>
                 <div>
@@ -88,20 +89,20 @@ function FormContact({ lang }: IFormContact) {
                         htmlFor="message"
                         className="block mb-2 text-sm font-medium text-white"
                     >
-                        {lang.message}
+                        {lang?.message}
                     </label>
                     <textarea
                         name="message"
                         id="message"
                         className="bg-[#100e2b] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                        placeholder={lang.messagePlac}
+                        placeholder={lang?.messagePlac}
                     />
                 </div>
                 <button
                     type="submit"
                     className="bg-gradient-to-br from-[#00FFFF] to-[#87CEEB] text-white font-medium py-2.5 px-5 rounded-lg w-full"
                 >
-                    {lang.btn}
+                    {lang?.btn}
                 </button>
             </form>
         </div>
