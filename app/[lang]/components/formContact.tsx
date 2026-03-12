@@ -29,7 +29,7 @@ function FormContact({ lang }: IFormContact) {
 
     };
 
-    console.log(form);
+    console.log(lang);
 
 
     return (
