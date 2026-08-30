@@ -50,7 +50,7 @@ const HeroSection = ({ page: { heroSection } }: IAchievementsSection) => {
                             {heroSection.btn1}
                         </Link>
                         <a
-                            href={"https://drive.google.com/file/d/1vzD7khPsDLLUxFt9e-i6EBS17-IDn3jm/view?usp=sharing"}
+                            href={"https://drive.google.com/file/d/1ztLwHoStedqYruXU1Y1aQYt784MWZk-U/view?usp=sharing"}
                             target="_blank"
                             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#00FFFF] to-[#87CEEB] hover:bg-slate-800 text-white mt-3"
                         >
